@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>boner maschinen — Holzbearbeitungsmaschinen, Service &amp; Occasionen | Küblis</title>
+<meta name="description" content="Service, Reparatur und Verkauf von Holzbearbeitungsmaschinen für Schreinereien. Neumaschinen und geprüfte Occasionen aus dem Prättigau — in zweiter Generation.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FFFFFF'/><circle cx='16' cy='16' r='7' fill='none' stroke='%230B7CC9' stroke-width='2.5'/></svg>">
+
+<style>
+/* =====================================================================
+   boner maschinen — Voltrix 2026
+   Hell. Weiss, Schwarz, Schattierung. Blau nur als Akzent.
+   ===================================================================== */
+
+:root{
+  --paper:#FFFFFF;
+  --soft:#F5F6F8;
+  --soft-2:#EDEFF2;
+  --ink:#0B0E13;
+  --ink-2:#565D67;
+  --ink-3:#949BA4;
+  --line:#E4E7EB;
+  --line-2:#D3D8DE;
+
+  --blue:#0B7CC9;
+  --blue-lt:#38ABE3;
+  --blue-dk:#075A93;
+  --blue-soft:#EAF4FC;
+
+  --f-display:"Jost",-apple-system,"Segoe UI",sans-serif;
+  --f-body:"Inter",-apple-system,"Segoe UI",sans-serif;
+
+  --r-sm:12px; --r-md:18px; --r-lg:26px; --r-xl:36px;
+  --wrap:1220px;
+
+  --sh-1:0 1px 2px rgba(11,14,19,.04), 0 4px 14px -8px rgba(11,14,19,.10);
+  --sh-2:0 2px 5px rgba(11,14,19,.04), 0 20px 44px -20px rgba(11,14,19,.20);
+  --sh-3:0 40px 90px -40px rgba(11,14,19,.35);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+body{
+  margin:0;font-family:var(--f-body);font-size:17px;line-height:1.62;
+  color:var(--ink);background:var(--paper);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
+
+h1,h2,h3,h4{font-family:var(--f-display);font-weight:400;letter-spacing:-.022em;line-height:1.06;margin:0 0 .5em}
+h1{font-size:clamp(2.8rem,6.6vw,5.2rem)}
+h2{font-size:clamp(2rem,4.4vw,3.4rem)}
+h3{font-size:1.2rem;font-weight:500;font-family:var(--f-body);letter-spacing:-.012em}
+p{margin:0 0 1.1em}
+
+.label{
+  display:inline-flex;align-items:center;gap:.65rem;
+  font-size:.71rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--blue);margin:0 0 1.4rem;
+}
+.label::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue)}
+.lead{font-size:clamp(1.02rem,1.5vw,1.16rem);color:var(--ink-2);max-width:60ch;font-weight:300}
+
+.wordmark{font-family:var(--f-display);font-weight:400;letter-spacing:-.03em;line-height:1;white-space:nowrap}
+
+.wrap{width:min(100% - 2.6rem,var(--wrap));margin-inline:auto}
+section{padding-block:clamp(4.2rem,9vw,8rem);position:relative}
+.soft{background:var(--soft)}
+.head{max-width:64ch;margin-bottom:clamp(2.4rem,5vw,4rem)}
+
+/* ---------- Header ---------- */
+.hdr{
+  position:fixed;top:0;left:0;right:0;z-index:80;
+  border-bottom:1px solid transparent;transition:background .35s,border-color .35s,backdrop-filter .35s;
+}
+.hdr[data-stuck="true"]{
+  background:rgba(255,255,255,.82);
+  backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
+  border-bottom-color:var(--line);
+}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.6rem;min-height:76px}
+.brandlink{display:flex;align-items:center;gap:.8rem;text-decoration:none;color:var(--ink)}
+.mark{
+  width:36px;height:36px;flex:none;border-radius:11px;
+  background:var(--blue-soft);border:1px solid rgba(11,124,201,.16);
+  display:grid;place-items:center;
+}
+.mark svg{width:18px;height:18px}
+.brandlink .wordmark{font-size:1.3rem}
+
+.nav{display:flex;align-items:center;gap:2rem}
+.nav a{text-decoration:none;font-size:.92rem;color:var(--ink-2);transition:color .25s}
+.nav a:hover{color:var(--ink)}
+.tel-pill{
+  display:inline-flex;align-items:center;gap:.5rem;padding:.58rem 1.1rem;border-radius:100px;
+  border:1px solid var(--line-2);color:var(--ink)!important;font-size:.87rem;font-weight:500;
+  background:var(--paper);transition:all .28s;
+}
+.tel-pill:hover{border-color:var(--blue);color:var(--blue)!important}
+.tel-pill svg{width:14px;height:14px;color:var(--blue)}
+.burger{display:none;width:42px;height:42px;border-radius:11px;background:var(--paper);border:1px solid var(--line-2);place-items:center;color:var(--ink)}
+
+@media(max-width:960px){
+  .burger{display:grid}
+  .nav{
+    position:fixed;inset:76px 1.3rem auto;flex-direction:column;align-items:stretch;gap:0;
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);
+    padding:.4rem 1.3rem 1rem;box-shadow:var(--sh-2);
+    opacity:0;transform:translateY(-12px) scale(.98);pointer-events:none;
+    transition:all .3s cubic-bezier(.3,.9,.3,1);
+  }
+  .nav[data-open="true"]{opacity:1;transform:none;pointer-events:auto}
+  .nav a{padding:.95rem 0;border-bottom:1px solid var(--line);font-size:1rem}
+  .nav a:last-of-type{border-bottom:0}
+  .tel-pill{display:none}
+}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.8rem;border-radius:100px;
+  font-size:.94rem;font-weight:500;text-decoration:none;border:1px solid transparent;
+  transition:all .28s cubic-bezier(.3,.9,.3,1);white-space:nowrap;
+}
+.btn svg{width:15px;height:15px;transition:transform .28s}
+.btn-p{background:var(--ink);color:var(--paper);box-shadow:var(--sh-1)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:var(--sh-2)}
+.btn-p:hover svg{transform:translateX(3px)}
+.btn-b{background:var(--blue);color:#fff;box-shadow:0 12px 30px -14px rgba(11,124,201,.8)}
+.btn-b:hover{background:var(--blue-dk);transform:translateY(-2px)}
+.btn-g{background:var(--paper);border-color:var(--line-2);color:var(--ink)}
+.btn-g:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn-w{background:var(--paper);color:var(--ink)}
+.btn-w:hover{transform:translateY(-2px)}
+.btn-sm{padding:.68rem 1.3rem;font-size:.86rem}
+
+/* ---------- Hero ---------- */
+.hero{padding-top:clamp(8.5rem,15vw,12rem);padding-bottom:clamp(3rem,6vw,5rem)}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(760px 420px at 88% 4%,rgba(56,171,227,.13),transparent 66%);
+}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero h1{margin-bottom:.32em}
+.hero h1 .thin{color:var(--ink-3)}
+.hero h1 .hl{color:var(--blue)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+.hero-stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:1px;
+  margin-top:3rem;background:var(--line);border:1px solid var(--line);
+  border-radius:var(--r-md);overflow:hidden;
+}
+.hero-stats div{background:var(--paper);padding:1.15rem 1.25rem}
+.hero-stats b{display:block;font-family:var(--f-display);font-size:1.45rem;font-weight:400;margin-bottom:.1rem}
+.hero-stats span{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+/* ---------- Bild-Platzhalter ---------- */
+.ph{
+  position:relative;overflow:hidden;border-radius:var(--r-lg);
+  background:
+    linear-gradient(160deg,var(--soft),var(--soft-2)),
+    repeating-linear-gradient(135deg,transparent 0 11px,rgba(11,14,19,.022) 11px 22px);
+  border:1px solid var(--line);display:grid;place-items:center;aspect-ratio:4/3;
+  box-shadow:var(--sh-1);
+}
+.ph::after{
+  content:attr(data-label);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);text-align:center;padding:.55rem 1.05rem;max-width:82%;
+  border:1px solid var(--line-2);border-radius:100px;background:rgba(255,255,255,.75);
+}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph:has(img)::after{display:none}
+.ph-tall{aspect-ratio:4/5}
+.ph-wide{aspect-ratio:16/10}
+.r-md{border-radius:var(--r-md)}
+
+/* ---------- Banner ---------- */
+.banner{
+  width:min(100% - 2.6rem,var(--wrap));margin-inline:auto;
+  padding-block:clamp(2.4rem,4.6vw,3.8rem);border-radius:var(--r-xl);
+  background:linear-gradient(118deg,var(--blue-lt) 0%,#1E93D5 48%,var(--blue-dk) 100%);
+  position:relative;overflow:hidden;box-shadow:0 40px 80px -44px rgba(11,124,201,.7);
+}
+.banner::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(640px 280px at 18% -35%,rgba(255,255,255,.34),transparent 62%);
+}
+.banner-inner{position:relative;text-align:center;padding-inline:1.4rem}
+.banner .wordmark{font-size:clamp(2rem,8.2vw,6rem);color:#fff;display:block;margin-bottom:.35rem}
+.banner p{margin:0;color:rgba(255,255,255,.92);font-weight:300;font-size:clamp(.82rem,1.6vw,1rem);letter-spacing:.2em;text-transform:uppercase}
+
+/* ---------- Karten ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(1rem,1.8vw,1.5rem)}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:clamp(1.6rem,3vw,2.2rem);box-shadow:var(--sh-1);
+  transition:transform .4s cubic-bezier(.3,.9,.3,1),box-shadow .4s,border-color .4s;
+}
+.card:hover{transform:translateY(-5px);box-shadow:var(--sh-2);border-color:var(--line-2)}
+.card-ico{
+  width:46px;height:46px;border-radius:14px;display:grid;place-items:center;margin-bottom:1.4rem;
+  background:var(--blue-soft);border:1px solid rgba(11,124,201,.14);
+}
+.card-ico svg{width:22px;height:22px;color:var(--blue)}
+.card p{margin:0;color:var(--ink-2);font-size:.93rem;font-weight:300}
+
+/* ---------- Occasionen ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.4rem}
+.filter{
+  padding:.58rem 1.25rem;border-radius:100px;font-size:.85rem;
+  background:var(--paper);border:1px solid var(--line-2);color:var(--ink-2);transition:all .26s;
+}
+.filter:hover{border-color:var(--ink-3);color:var(--ink)}
+.filter[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:500}
+
+.grid-m{display:grid;grid-template-columns:repeat(auto-fill,minmax(305px,1fr));gap:clamp(1.1rem,2vw,1.7rem)}
+.machine{
+  text-align:left;padding:0;background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;color:var(--ink);
+  box-shadow:var(--sh-1);
+  transition:transform .42s cubic-bezier(.3,.9,.3,1),box-shadow .42s,border-color .42s;
+}
+.machine:hover{transform:translateY(-6px);box-shadow:var(--sh-2);border-color:var(--line-2)}
+.m-img{position:relative}
+.m-img .ph{border:0;border-radius:0;aspect-ratio:4/3;box-shadow:none;border-bottom:1px solid var(--line)}
+.m-tag{
+  position:absolute;top:.9rem;right:.9rem;z-index:2;font-size:.67rem;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:500;padding:.38rem .8rem;border-radius:100px;
+  background:rgba(255,255,255,.94);border:1px solid var(--line-2);backdrop-filter:blur(8px);
+}
+.m-tag[data-s="reserviert"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.m-tag[data-s="verkauft"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.m-count{
+  position:absolute;left:.9rem;bottom:.9rem;z-index:2;display:inline-flex;align-items:center;gap:.38rem;
+  font-size:.69rem;font-weight:500;padding:.34rem .75rem;border-radius:100px;
+  background:rgba(255,255,255,.94);border:1px solid var(--line-2);color:var(--ink-2);backdrop-filter:blur(8px);
+}
+.m-count svg{width:12px;height:12px}
+.m-body{padding:1.45rem 1.55rem 1.6rem;display:flex;flex-direction:column;flex:1}
+.m-brand{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:.55rem;font-weight:500}
+.m-body h3{margin-bottom:.65rem}
+.m-desc{
+  font-size:.89rem;color:var(--ink-2);font-weight:300;margin:0 0 1.4rem;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.m-foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;padding-top:1.1rem;border-top:1px solid var(--line)}
+.m-meta{font-size:.75rem;color:var(--ink-3);line-height:1.5}
+.m-price{font-family:var(--f-display);font-size:1.38rem;font-weight:400;white-space:nowrap;text-align:right}
+.m-price small{display:block;font-size:.59rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-family:var(--f-body)}
+.empty{grid-column:1/-1;border:1px dashed var(--line-2);border-radius:var(--r-lg);padding:3.6rem 1.5rem;text-align:center;color:var(--ink-3);font-size:.92rem}
+
+/* ---------- Betrieb ---------- */
+.story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.story-imgs{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.story-imgs .ph:first-child{grid-row:span 2;aspect-ratio:3/4.7}
+.tl{margin-top:2.2rem}
+.tl > div{display:grid;grid-template-columns:84px 1fr;gap:1.4rem;padding:1.25rem 0;border-top:1px solid var(--line)}
+.tl > div:last-child{border-bottom:1px solid var(--line)}
+.tl-when{font-family:var(--f-display);font-size:1rem;color:var(--blue);padding-top:.08rem}
+.tl strong{display:block;font-weight:500;margin-bottom:.2rem;font-size:1rem}
+.tl p{margin:0;font-size:.89rem;color:var(--ink-2);font-weight:300}
+@media(max-width:900px){.story-grid{grid-template-columns:1fr}}
+
+/* ---------- Galerie ---------- */
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:1rem}
+.gal .ph{cursor:zoom-in;transition:transform .42s cubic-bezier(.3,.9,.3,1),box-shadow .42s}
+.gal .ph:hover{transform:scale(1.015);box-shadow:var(--sh-2)}
+
+/* ---------- Kontakt (dunkel) ---------- */
+.dark{background:var(--ink);color:#fff}
+.dark .label{color:var(--blue-lt)}
+.dark .label::before{background:var(--blue-lt)}
+.dark .lead{color:rgba(255,255,255,.66)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4.5vw,4.5rem)}
+.klist > div{display:grid;grid-template-columns:108px 1fr;gap:1.2rem;padding:1.05rem 0;border-top:1px solid rgba(255,255,255,.12)}
+.klist > div:last-child{border-bottom:1px solid rgba(255,255,255,.12)}
+.kkey{font-size:.69rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.42);padding-top:.24rem}
+.kval{font-size:.97rem;font-weight:300}
+.kval a{text-decoration:none;border-bottom:1px solid rgba(56,171,227,.55);transition:color .25s}
+.kval a:hover{color:var(--blue-lt)}
+.mapbox{
+  border-radius:var(--r-lg);border:1px solid rgba(255,255,255,.13);aspect-ratio:4/3;
+  background:linear-gradient(150deg,rgba(56,171,227,.12),rgba(255,255,255,.02));
+  display:grid;place-items:center;text-align:center;padding:2rem;
+}
+.mapbox span{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.42);line-height:2}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+
+/* ---------- Footer ---------- */
+.ftr{background:var(--ink);color:rgba(255,255,255,.45);border-top:1px solid rgba(255,255,255,.1);padding-block:2.6rem}
+.ftr .wrap{display:flex;flex-wrap:wrap;gap:1.2rem 2.4rem;justify-content:space-between;align-items:center}
+.ftr small{font-size:.82rem}
+.flinks{display:flex;flex-wrap:wrap;gap:1.6rem}
+.flinks a{color:rgba(255,255,255,.45);text-decoration:none;font-size:.84rem;transition:color .25s}
+.flinks a:hover{color:#fff}
+
+/* ---------- Sticky Anruf ---------- */
+.sticky-call{display:none}
+@media(max-width:960px){
+  .sticky-call{
+    display:flex;position:fixed;left:1.1rem;right:1.1rem;bottom:1.1rem;z-index:70;
+    align-items:center;justify-content:center;gap:.6rem;padding:1.05rem;border-radius:100px;
+    text-decoration:none;font-weight:500;background:var(--ink);color:#fff;
+    box-shadow:0 18px 40px -16px rgba(11,14,19,.6);
+  }
+  .sticky-call svg{width:17px;height:17px;color:var(--blue-lt)}
+  body{padding-bottom:5rem}
+}
+
+/* ---------- Overlay ---------- */
+.ov{position:fixed;inset:0;z-index:200;display:none;background:rgba(11,14,19,.45);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:clamp(.8rem,3vw,2.5rem);overflow-y:auto}
+.ov[data-open="true"]{display:grid;place-items:center}
+.ov-card{width:min(100%,1000px);max-height:100%;overflow-y:auto;background:var(--paper);border-radius:var(--r-xl);box-shadow:var(--sh-3);animation:rise .38s cubic-bezier(.2,.9,.3,1)}
+@keyframes rise{from{opacity:0;transform:translateY(18px) scale(.985)}}
+.ov-x{position:sticky;top:0;margin:1rem 1rem 0 auto;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--soft);border:1px solid var(--line);color:var(--ink);z-index:5}
+.ov-x:hover{background:var(--soft-2)}
+.ov-body{padding:0 clamp(1.3rem,3.4vw,3rem) clamp(2rem,3.4vw,3rem)}
+.ov-main .ph{aspect-ratio:16/10;margin-bottom:.8rem}
+.thumbs{display:flex;gap:.65rem;overflow-x:auto;padding-bottom:.5rem}
+.thumbs .ph{width:92px;flex:none;aspect-ratio:1;cursor:pointer;border-radius:var(--r-sm)}
+.thumbs .ph[aria-current="true"]{border-color:var(--blue);box-shadow:0 0 0 2px rgba(11,124,201,.25)}
+.ov-info{margin-top:2rem}
+.ov-info h3{font-family:var(--f-display);font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:400;margin-bottom:.25rem}
+.ov-price{font-family:var(--f-display);font-size:1.9rem;font-weight:400;margin-bottom:1.5rem}
+.ov-price small{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-family:var(--f-body);margin-left:.6rem}
+.specs{width:100%;border-collapse:collapse;font-size:.9rem;margin:1.6rem 0}
+.specs td{padding:.8rem .3rem;border-bottom:1px solid var(--line)}
+.specs td:first-child{color:var(--ink-3);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;width:42%}
+.ov-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
+
+/* ---------- Rechtstexte ---------- */
+.legal{max-width:76ch}
+.legal h4{font-family:var(--f-body);font-size:1.04rem;font-weight:600;margin:2.2rem 0 .6rem}
+.legal p,.legal li{color:var(--ink-2);font-size:.93rem;font-weight:300}
+.legal ul{padding-left:1.2rem}
+
+/* ---------- Cookie ---------- */
+.cookie{
+  position:fixed;z-index:150;left:1.2rem;bottom:1.2rem;max-width:390px;background:var(--paper);
+  border:1px solid var(--line);border-radius:var(--r-md);padding:1.3rem 1.4rem;
+  box-shadow:var(--sh-2);font-size:.86rem;color:var(--ink-2);
+}
+.cookie[hidden]{display:none}
+.cookie p{margin:0 0 .9rem}
+.cookie a{color:var(--blue)}
+@media(max-width:960px){.cookie{bottom:6rem;right:1.2rem;max-width:none}}
+
+/* ---------- Reveal ---------- */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.75,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+
+/* =====================================================================
+   VERWALTUNG
+   ===================================================================== */
+#admin{display:none}
+body[data-view="admin"] #site{display:none}
+body[data-view="admin"] #admin{display:block}
+body[data-view="admin"]{background:var(--soft)}
+body[data-view="admin"] .sticky-call,body[data-view="admin"] .cookie{display:none!important}
+
+.a-login{min-height:100vh;display:grid;place-items:center;padding:1.5rem}
+.a-box{width:min(100%,430px);background:var(--paper);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(1.8rem,4vw,2.6rem);box-shadow:var(--sh-2)}
+.a-bar{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--line);padding-block:.95rem}
+.a-bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.a-bar b{font-family:var(--f-display);font-weight:400;font-size:1.15rem;display:block}
+.a-bar small{font-size:.71rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.a-acts{display:flex;gap:.55rem;flex-wrap:wrap}
+
+.a-panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(1.5rem,3vw,2.2rem);margin-bottom:1.1rem;box-shadow:var(--sh-1)}
+.a-panel h2{font-family:var(--f-body);font-size:1.04rem;font-weight:600;margin-bottom:1.2rem}
+.fld{display:block;margin-bottom:1.05rem}
+.fld > span{display:block;font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.45rem}
+input,textarea,select{
+  width:100%;font:inherit;font-size:.94rem;padding:.8rem .95rem;background:var(--paper);
+  border:1px solid var(--line-2);border-radius:var(--r-sm);color:var(--ink);transition:border-color .22s,box-shadow .22s;
+}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,124,201,.12)}
+textarea{min-height:120px;resize:vertical}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:0 1rem}
+@media(max-width:700px){.g2,.g3{grid-template-columns:1fr}}
+.hint{font-size:.83rem;color:var(--ink-3);margin:-.4rem 0 1.1rem;font-weight:300}
+
+.a-row{display:grid;grid-template-columns:76px 1fr auto;gap:1.1rem;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:.85rem;margin-bottom:.75rem;box-shadow:var(--sh-1);transition:border-color .28s}
+.a-row:hover{border-color:var(--line-2)}
+.a-row .ph{aspect-ratio:1;border-radius:var(--r-sm);box-shadow:none}
+.a-row .ph::after{display:none}
+.a-rt{font-weight:500;font-size:.99rem;margin-bottom:.15rem}
+.a-rm{font-size:.77rem;color:var(--ink-3)}
+.a-ra{display:flex;gap:.42rem;flex-wrap:wrap}
+.ibtn{width:37px;height:37px;display:grid;place-items:center;border-radius:11px;background:var(--paper);border:1px solid var(--line-2);color:var(--ink-2);transition:all .24s}
+.ibtn:hover:not(:disabled){color:var(--blue);border-color:var(--blue)}
+.ibtn:disabled{opacity:.3;cursor:not-allowed}
+.ibtn svg{width:15px;height:15px}
+@media(max-width:640px){.a-row{grid-template-columns:58px 1fr}.a-ra{grid-column:1/-1}}
+
+.thumbgrid{display:flex;flex-wrap:wrap;gap:.65rem;margin-bottom:1rem}
+.tw{position:relative;width:96px}
+.tw img{width:96px;height:96px;object-fit:cover;border-radius:var(--r-sm);border:1px solid var(--line)}
+.tw button{position:absolute;top:-8px;right:-8px;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;border:0;font-size:.9rem;line-height:1;display:grid;place-items:center}
+.dngr{border-color:#F0C9C7!important;color:#C0392B!important}
+.dngr:hover{background:#FCEEEC!important;border-color:#C0392B!important}
+
+.toast{position:fixed;left:50%;bottom:1.8rem;transform:translateX(-50%);z-index:400;background:var(--ink);color:#fff;padding:.9rem 1.55rem;border-radius:100px;font-size:.89rem;font-weight:500;box-shadow:var(--sh-2);max-width:90vw;text-align:center}
+.toast[data-t="err"]{background:#C0392B}
+.toast[hidden]{display:none}
+</style>
+</head>
+
+<body data-view="site">
+
+<!-- ==================================================================
+     ÖFFENTLICHE SEITE
+     ================================================================== -->
+<div id="site">
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="brandlink" href="#top">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0B7CC9" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="12" cy="12" r="3.4"/><path d="M12 1.8v3.4M12 18.8v3.4M1.8 12h3.4M18.8 12h3.4M4.8 4.8l2.4 2.4M16.8 16.8l2.4 2.4M19.2 4.8l-2.4 2.4M7.2 16.8l-2.4 2.4"/>
+        </svg>
+      </span>
+      <span class="wordmark">boner maschinen</span>
+    </a>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menü">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#occasionen">Occasionen</a>
+      <a href="#betrieb">Betrieb</a>
+      <a href="#werkstatt">Werkstatt</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="tel-pill" href="tel:+41000000000">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        081 000 00 00
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="label">Holzbearbeitungsmaschinen · Prättigau</p>
+      <h1>Maschinen,<br><span class="thin">die</span> <span class="hl">weiterlaufen</span>.</h1>
+      <p class="lead">
+        Service, Revision und Verkauf für Schreinereien — in zweiter Generation.
+        Neu ab Werk oder als geprüfte Occasion, beides mit derselben Sorgfalt,
+        die eine Werkstatt braucht, wenn am Montag der Auftrag steht.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-p" href="#occasionen">
+          Occasionen ansehen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-g" href="#kontakt">Service anfragen</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>2.</b><span>Generation</span></div>
+        <div><b>Küblis</b><span>Werkstatt GR</span></div>
+        <div><b>CH</b><span>Serviceregion</span></div>
+        <div><b>[Jahr]</b><span>gegründet</span></div>
+      </div>
+    </div>
+    <div><div class="ph ph-tall" data-label="Platzhalter — Maschine oder Werkstatt, hochkant"></div></div>
+  </div>
+</section>
+
+<!-- BANNER -->
+<div class="banner rv">
+  <div class="banner-inner">
+    <span class="wordmark">boner maschinen</span>
+    <p>Service &amp; Verkauf · Neumaschinen &amp; Occasionen</p>
+  </div>
+</div>
+
+<!-- LEISTUNGEN -->
+<section class="soft" id="leistungen" style="margin-top:clamp(4rem,8vw,7rem)">
+  <div class="wrap">
+    <div class="head">
+      <p class="label">Was wir machen</p>
+      <h2>Vier Dinge,<br>richtig gemacht.</h2>
+      <p class="lead">Kein Katalogversand, keine Hotline. Sie reden mit der Person, die nachher unter der Maschine liegt.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 0 5 5L16 15l-3-3z"/><path d="M13 12L4.5 20.5a2.1 2.1 0 0 1-3-3L10 9"/></svg></div>
+        <h3>Service &amp; Reparatur</h3>
+        <p>Unterhalt, Störungsbehebung und Ersatzteile für nahezu jedes Fabrikat — auch wenn der Hersteller den Support längst eingestellt hat.</p>
+      </article>
+      <article class="card rv">
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>Neumaschinen</h3>
+        <p>Wir beraten nach Werkstatt, nicht nach Prospekt: Platz, Absaugung, Strom und Auftragslage bestimmen, welche Maschine passt.</p>
+      </article>
+      <article class="card rv">
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.9 12a8.9 8.9 0 1 1-2.6-6.3"/><path d="M21 4v5h-5"/></svg></div>
+        <h3>Occasionen</h3>
+        <p>Jede Occasion läuft vor dem Verkauf durch unsere Werkstatt. Was wir nicht selbst kaufen würden, stellen wir auch nicht in die Liste.</p>
+      </article>
+      <article class="card rv">
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.1 13.1a1 1 0 0 0 .8 1.6H11l-1 7.3 8.9-11.1a1 1 0 0 0-.8-1.6H12z"/></svg></div>
+        <h3>Elektro &amp; Automation</h3>
+        <p>Steuerungen instand setzen, Antriebe ersetzen, Anlagen nachrüsten. Damit eine gute Mechanik nicht an der Elektronik scheitert.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- OCCASIONEN -->
+<section id="occasionen">
+  <div class="wrap">
+    <div class="head">
+      <p class="label">Aktuelles Angebot</p>
+      <h2>Occasionen &amp;<br>Lagermaschinen.</h2>
+      <p class="lead">Alle Maschinen stehen bei uns in Küblis und können nach Absprache besichtigt und vorgeführt werden. Preise exkl. MwSt., ab Standort.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Nach Kategorie filtern"></div>
+    <div class="grid-m" id="grid"></div>
+  </div>
+</section>
+
+<!-- BETRIEB -->
+<section class="soft" id="betrieb">
+  <div class="wrap story-grid">
+    <div class="story-imgs">
+      <div class="ph r-md" data-label="Platzhalter — Inhaber in der Werkstatt"></div>
+      <div class="ph r-md" data-label="Platzhalter — Detail Werkzeug"></div>
+      <div class="ph r-md" data-label="Platzhalter — Werkstatt früher"></div>
+    </div>
+    <div>
+      <p class="label">Der Betrieb</p>
+      <h2>Zweite Generation,<br>gleiche Werkbank.</h2>
+      <p class="lead">
+        Was als Ein-Mann-Werkstatt für die Schreinereien im Tal begann, ist heute die
+        Adresse, an die Betriebe von weit her ihre Maschinen bringen. Übergeben wurde
+        der Betrieb nicht auf dem Papier, sondern über Jahre nebeneinander an derselben Maschine.
+      </p>
+      <div class="tl">
+        <div><span class="tl-when">[Jahr]</span><div><strong>Gründung</strong><p>Der Vater beginnt mit Service und Reparaturen für Schreinereien im Prättigau.</p></div></div>
+        <div><span class="tl-when">[Jahr]</span><div><strong>Eigene Werkstatt in Küblis</strong><p>Mehr Platz für Revisionen, Occasionen und die Ausstellung einzelner Maschinen.</p></div></div>
+        <div><span class="tl-when">[Jahr]</span><div><strong>Übergabe an die zweite Generation</strong><p>Ambrosi Boner führt den Betrieb weiter — mit Elektro- und Automationsarbeiten als zusätzlichem Standbein.</p></div></div>
+        <div><span class="tl-when">Heute</span><div><strong>Service in der ganzen Schweiz</strong><p>Vom Notfall am Freitagabend bis zur kompletten Revision einer Kehlmaschine.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WERKSTATT -->
+<section id="werkstatt">
+  <div class="wrap">
+    <div class="head">
+      <p class="label">Einblick</p>
+      <h2>Aus der Werkstatt.</h2>
+      <p class="lead">Revisionen, Umbauten, Transporte — ein Ausschnitt aus dem, was bei uns durchgeht.</p>
+    </div>
+    <div class="gal" id="gal">
+      <div class="ph ph-wide r-md" data-label="Platzhalter — Werkstattbild 1"></div>
+      <div class="ph ph-wide r-md" data-label="Platzhalter — Werkstattbild 2"></div>
+      <div class="ph ph-wide r-md" data-label="Platzhalter — Werkstattbild 3"></div>
+      <div class="ph ph-wide r-md" data-label="Platzhalter — Transport / Lastwagen"></div>
+      <div class="ph ph-wide r-md" data-label="Platzhalter — Werkstattbild 5"></div>
+      <div class="ph ph-wide r-md" data-label="Platzhalter — Werkstattbild 6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="dark" id="kontakt">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="label">Kontakt</p>
+      <h2>Rufen Sie an.</h2>
+      <p class="lead">Am schnellsten geht es telefonisch — dann wissen wir gleich, um welche Maschine es geht. Besichtigungen in Küblis nach Vereinbarung.</p>
+      <div class="klist">
+        <div><span class="kkey">Werkstatt</span><span class="kval">boner maschinen<br>[Strasse und Nr.]<br>7240 Küblis</span></div>
+        <div><span class="kkey">Sitz</span><span class="kval">Oberdorfstrasse 36<br>7247 Saas im Prättigau</span></div>
+        <div><span class="kkey">Telefon</span><span class="kval"><a href="tel:+41000000000">081 000 00 00</a></span></div>
+        <div><span class="kkey">E-Mail</span><span class="kval"><a href="mailto:info@bonermaschinen.ch">info@bonermaschinen.ch</a></span></div>
+        <div><span class="kkey">Zeiten</span><span class="kval">Mo–Fr [Zeiten]<br>Sa nach Vereinbarung</span></div>
+      </div>
+    </div>
+    <div class="mapbox"><span>Platzhalter — Karte<br>Küblis GR<br>OpenStreetMap folgt beim Livegang</span></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <small id="cprt"></small>
+    <nav class="flinks">
+      <a href="#" data-legal="impressum">Impressum</a>
+      <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>
+      <a href="#verwaltung">Verwaltung</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:+41000000000">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+  Jetzt anrufen
+</a>
+
+<aside class="cookie" id="cookie" hidden>
+  <p>Diese Website speichert nur technisch Notwendiges im Browser. Kein Tracking, keine Werbung. Details in der <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>.</p>
+  <button class="btn btn-p btn-sm" id="cookieOk">Verstanden</button>
+</aside>
+
+</div><!-- /#site -->
+
+
+<!-- ==================================================================
+     VERWALTUNG
+     ================================================================== -->
+<div id="admin">
+
+  <div class="a-login" id="aLogin">
+    <div class="a-box">
+      <span class="mark" style="margin-bottom:1.5rem" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0B7CC9" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="12" cy="12" r="3.4"/><path d="M12 1.8v3.4M12 18.8v3.4M1.8 12h3.4M18.8 12h3.4M4.8 4.8l2.4 2.4M16.8 16.8l2.4 2.4M19.2 4.8l-2.4 2.4M7.2 16.8l-2.4 2.4"/>
+        </svg>
+      </span>
+      <h2 style="font-size:1.85rem;margin-bottom:.25rem">Verwaltung</h2>
+      <p class="hint" style="margin-bottom:1.7rem">Angebote bearbeiten, hinzufügen und entfernen.</p>
+      <label class="fld"><span>Passwort</span><input type="password" id="pw" autocomplete="current-password"></label>
+      <button class="btn btn-b" id="pwBtn" style="width:100%;justify-content:center">Anmelden</button>
+      <p class="hint" style="margin:1.3rem 0 0"><a href="#top" id="backSite" style="color:var(--ink-3);text-decoration:none">← Zurück zur Website</a></p>
+    </div>
+  </div>
+
+  <div id="aApp" hidden>
+    <div class="a-bar">
+      <div class="wrap">
+        <div><b>Angebote verwalten</b><small id="aStat">wird geladen …</small></div>
+        <div class="a-acts">
+          <button class="btn btn-g btn-sm" id="aNew">Neue Maschine</button>
+          <button class="btn btn-b btn-sm" id="aSave">Veröffentlichen</button>
+          <button class="btn btn-g btn-sm" id="aOut">Abmelden</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap" style="padding-block:2.2rem 5rem">
+      <div id="aList"><div id="aRows"></div></div>
+
+      <div class="a-panel" id="aEdit" hidden>
+        <h2 id="aEditTitle">Maschine bearbeiten</h2>
+
+        <label class="fld"><span>Bezeichnung</span><input id="f_titel" placeholder="z. B. Formatkreissäge 3200 mm"></label>
+
+        <div class="g2">
+          <label class="fld"><span>Hersteller</span><input id="f_hersteller"></label>
+          <label class="fld"><span>Kategorie</span><input id="f_kategorie" list="kats" placeholder="Occasion">
+            <datalist id="kats"><option value="Occasion"><option value="Neumaschine"><option value="Lagermaschine"></datalist>
+          </label>
+        </div>
+
+        <div class="g3">
+          <label class="fld"><span>Baujahr</span><input id="f_baujahr"></label>
+          <label class="fld"><span>Zustand</span><input id="f_zustand" placeholder="revidiert"></label>
+          <label class="fld"><span>Status</span><select id="f_status">
+            <option value="verfügbar">verfügbar</option>
+            <option value="reserviert">reserviert</option>
+            <option value="verkauft">verkauft</option>
+          </select></label>
+        </div>
+
+        <label class="fld"><span>Preis in CHF — leer = auf Anfrage</span><input id="f_preis" inputmode="numeric" placeholder="8900"></label>
+        <label class="fld"><span>Beschreibung</span><textarea id="f_beschreibung"></textarea></label>
+
+        <span class="fld" style="margin-bottom:.5rem"><span>Weitere Angaben</span></span>
+        <div id="aDetails"></div>
+        <button class="btn btn-g btn-sm" id="aAddDetail" style="margin-bottom:1.5rem">Angabe hinzufügen</button>
+
+        <span class="fld" style="margin-bottom:.5rem"><span>Bilder</span></span>
+        <div class="thumbgrid" id="aThumbs"></div>
+        <input type="file" id="aFile" accept="image/*" multiple>
+        <p class="hint" style="margin-top:.6rem">Mehrere Bilder möglich, werden automatisch verkleinert. Das erste Bild ist das Titelbild.</p>
+
+        <div style="display:flex;gap:.65rem;flex-wrap:wrap;margin-top:1.7rem">
+          <button class="btn btn-b btn-sm" id="aApply">Übernehmen</button>
+          <button class="btn btn-g btn-sm" id="aCancel">Abbrechen</button>
+          <button class="btn btn-g btn-sm dngr" id="aDel" style="margin-left:auto">Maschine löschen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ov" id="ov" data-open="false" role="dialog" aria-modal="true">
+  <div class="ov-card">
+    <button class="ov-x" id="ovX" aria-label="Schliessen">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="ov-body" id="ovBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+
+<!-- Startdaten. Werden benutzt, solange in der Verwaltung noch nichts
+     gespeichert wurde. Danach kommen die Angebote aus /api/angebote. -->
+<script id="startdaten" type="application/json">
+[
+  {
+    "id":"m-001","titel":"Formatkreissäge mit Schiebeschlitten 3200 mm","hersteller":"Platzhalter Hersteller",
+    "kategorie":"Occasion","baujahr":"2014","zustand":"revidiert","status":"verfügbar","preis":8900,
+    "beschreibung":"Vollständig revidierte Formatkreissäge mit 3200 mm Schnittlänge, Vorritzaggregat und elektrischer Höhen- und Schrägverstellung. Führungen neu eingestellt, Lager ersetzt, Sägeblatt und Vorritzer neu.",
+    "details":[{"key":"Schnittlänge","wert":"3200 mm"},{"key":"Motorleistung","wert":"5.5 kW"},{"key":"Anschluss","wert":"400 V"}],
+    "bilder":[]
+  },
+  {
+    "id":"m-002","titel":"Abricht- und Dickenhobelmaschine 410 mm","hersteller":"Platzhalter Hersteller",
+    "kategorie":"Occasion","baujahr":"2009","zustand":"guter Zustand","status":"verfügbar","preis":4200,
+    "beschreibung":"Kombinierte Abricht- und Dickenhobelmaschine mit 410 mm Arbeitsbreite und Spiralmesserwelle. Tische plan, Umstellung leichtgängig.",
+    "details":[{"key":"Arbeitsbreite","wert":"410 mm"},{"key":"Messerwelle","wert":"Spiral"}],
+    "bilder":[]
+  },
+  {
+    "id":"m-003","titel":"Kantenanleimmaschine, einseitig","hersteller":"Platzhalter Hersteller",
+    "kategorie":"Occasion","baujahr":"2016","zustand":"sehr gut","status":"reserviert","preis":15500,
+    "beschreibung":"Einseitige Kantenanleimmaschine mit Vorfräse, Kappaggregat, Bündigfräser und Ziehklinge. Leimbecken gereinigt, Steuerung überprüft.",
+    "details":[{"key":"Kantenstärke","wert":"0.4 – 3 mm"},{"key":"Vorschub","wert":"12 m/min"}],
+    "bilder":[]
+  },
+  {
+    "id":"m-004","titel":"Absauganlage 3000 m³/h mit Filterpatrone","hersteller":"Platzhalter Hersteller",
+    "kategorie":"Lagermaschine","baujahr":"2019","zustand":"wie neu","status":"verfügbar","preis":3400,
+    "beschreibung":"Kompakte Absauganlage für kleinere Werkstätten, mit Filterpatrone und Abreinigung. Wenig Betriebsstunden, Filter neu.",
+    "details":[{"key":"Leistung","wert":"3000 m³/h"},{"key":"Motor","wert":"3 kW"}],
+    "bilder":[]
+  },
+  {
+    "id":"m-005","titel":"Breitbandschleifmaschine 1100 mm","hersteller":"Platzhalter Hersteller",
+    "kategorie":"Occasion","baujahr":"2007","zustand":"revisionsbedürftig","status":"verfügbar","preis":null,
+    "beschreibung":"Breitbandschleifmaschine mit 1100 mm Arbeitsbreite. Mechanik solide, Schleifband und Steuerung müssen überholt werden. Preis nach Umfang der Revision.",
+    "details":[{"key":"Arbeitsbreite","wert":"1100 mm"}],
+    "bilder":[]
+  },
+  {
+    "id":"m-006","titel":"Vertikale Plattensäge","hersteller":"Platzhalter Hersteller",
+    "kategorie":"Neumaschine","baujahr":"2026","zustand":"neu","status":"verfügbar","preis":12800,
+    "beschreibung":"Neue vertikale Plattensäge ab Werk, in unserer Werkstatt in Küblis ausgestellt. Lieferung und Inbetriebnahme durch uns.",
+    "details":[{"key":"Garantie","wert":"Platzhalter"}],
+    "bilder":[]
+  }
+]
+</script>
+
+<script>
+/* =====================================================================
+   Frontend + Verwaltung
+   Daten kommen von /api/angebote (Cloudflare Pages Function + KV).
+   ===================================================================== */
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const chf = n => (typeof n === 'number' && !isNaN(n)) ? 'CHF ' + n.toLocaleString('de-CH') : 'Auf Anfrage';
+
+let DATEN = [];
+let FILTER = 'Alle';
+let TOKEN = sessionStorage.getItem('bm-sitzung') || '';
+let DIRTY = false, AKT = null, ENTW = null;
+
+function startdaten(){
+  try { return JSON.parse($('startdaten').textContent); } catch(e){ return []; }
+}
+
+async function ladeAngebote(){
+  try{
+    const r = await fetch('/api/angebote', {cache:'no-store'});
+    if(!r.ok) throw 0;
+    const d = await r.json();
+    DATEN = Array.isArray(d) && d.length ? d : startdaten();
+  }catch(e){
+    DATEN = startdaten();   // z. B. lokal ohne Cloudflare
+  }
+  renderFilter(); renderGrid();
+}
+
+/* ---------------- Occasionen ---------------- */
+function bild(src, label, cls){
+  return src
+    ? `<div class="ph ${cls||''}"><img src="${esc(src)}" alt="${esc(label)}" loading="lazy"></div>`
+    : `<div class="ph ${cls||''}" data-label="${esc(label)}"></div>`;
+}
+function renderFilter(){
+  const kats = ['Alle', ...new Set(DATEN.map(m => m.kategorie).filter(Boolean))];
+  $('filters').innerHTML = kats.map(k =>
+    `<button class="filter" data-k="${esc(k)}" aria-pressed="${k===FILTER}">${esc(k)}</button>`).join('');
+  $('filters').querySelectorAll('.filter').forEach(b =>
+    b.onclick = () => { FILTER = b.dataset.k; renderFilter(); renderGrid(); });
+}
+function renderGrid(){
+  const liste = DATEN.filter(m => FILTER === 'Alle' || m.kategorie === FILTER);
+  if(!liste.length){
+    $('grid').innerHTML = '<div class="empty">In dieser Kategorie steht momentan keine Maschine zum Verkauf.</div>';
+    return;
+  }
+  $('grid').innerHTML = liste.map((m,i) => {
+    const b = (m.bilder||[]).filter(Boolean);
+    const meta = [m.baujahr && ('Baujahr ' + m.baujahr), m.zustand].filter(Boolean).join('<br>');
+    return `<button class="machine rv" data-id="${esc(m.id)}" style="transition-delay:${Math.min(i,6)*65}ms">
+      <div class="m-img">
+        ${bild(b[0], 'Platzhalter — ' + (m.titel||'Maschine'))}
+        ${m.status && m.status !== 'verfügbar' ? `<span class="m-tag" data-s="${esc(m.status)}">${esc(m.status)}</span>` : ''}
+        ${b.length > 1 ? `<span class="m-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg>${b.length}</span>` : ''}
+      </div>
+      <div class="m-body">
+        ${m.hersteller ? `<span class="m-brand">${esc(m.hersteller)}</span>` : ''}
+        <h3>${esc(m.titel)}</h3>
+        <p class="m-desc">${esc(m.beschreibung)}</p>
+        <div class="m-foot">
+          <span class="m-meta">${meta || '&nbsp;'}</span>
+          <span class="m-price">${esc(chf(m.preis))}${m.preis ? '<small>exkl. MwSt.</small>' : ''}</span>
+        </div>
+      </div>
+    </button>`;
+  }).join('');
+  $('grid').querySelectorAll('.machine').forEach(c => c.onclick = () => detail(c.dataset.id));
+  beobachte();
+}
+
+/* ---------------- Overlay ---------------- */
+const ov = $('ov'), ovBody = $('ovBody');
+let letzter = null;
+function ovAuf(html){
+  letzter = document.activeElement; ovBody.innerHTML = html;
+  ov.dataset.open = 'true'; document.body.style.overflow = 'hidden'; $('ovX').focus();
+}
+function ovZu(){ ov.dataset.open = 'false'; document.body.style.overflow = ''; if(letzter) letzter.focus(); }
+$('ovX').onclick = ovZu;
+ov.onclick = e => { if(e.target === ov) ovZu(); };
+document.addEventListener('keydown', e => { if(e.key === 'Escape' && ov.dataset.open === 'true') ovZu(); });
+
+function detail(id){
+  const m = DATEN.find(x => x.id === id); if(!m) return;
+  const b = (m.bilder||[]).filter(Boolean);
+  const zeilen = [
+    ['Kategorie',m.kategorie],['Hersteller',m.hersteller],['Baujahr',m.baujahr],
+    ['Zustand',m.zustand],['Status',m.status],...(m.details||[]).map(d => [d.key,d.wert])
+  ].filter(r => r[1]);
+
+  ovAuf(`
+    <div class="ov-main">
+      <div id="ovMain">${bild(b[0], 'Platzhalter — ' + (m.titel||'Maschine'))}</div>
+      ${b.length > 1 ? `<div class="thumbs" id="ovThumbs">${b.map((s,i) =>
+        `<div class="ph" data-src="${esc(s)}" aria-current="${i===0}"><img src="${esc(s)}" alt="" loading="lazy"></div>`).join('')}</div>` : ''}
+    </div>
+    <div class="ov-info">
+      ${m.hersteller ? `<span class="m-brand">${esc(m.hersteller)}</span>` : ''}
+      <h3>${esc(m.titel)}</h3>
+      <div class="ov-price">${esc(chf(m.preis))}${m.preis ? '<small>exkl. MwSt.</small>' : ''}</div>
+      <p class="lead">${esc(m.beschreibung)}</p>
+      <table class="specs">${zeilen.map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')}</table>
+      <div class="ov-actions">
+        <a class="btn btn-b" href="tel:+41000000000">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          Zu dieser Maschine anrufen
+        </a>
+        <a class="btn btn-g" href="mailto:info@bonermaschinen.ch?subject=${encodeURIComponent('Anfrage: ' + (m.titel||''))}">E-Mail schreiben</a>
+      </div>
+    </div>`);
+
+  const t = $('ovThumbs');
+  if(t) t.querySelectorAll('.ph').forEach(el => el.onclick = () => {
+    $('ovMain').innerHTML = `<div class="ph"><img src="${esc(el.dataset.src)}" alt=""></div>`;
+    t.querySelectorAll('.ph').forEach(x => x.setAttribute('aria-current','false'));
+    el.setAttribute('aria-current','true');
+  });
+}
+
+$('gal').onclick = e => {
+  const img = e.target.closest('.ph')?.querySelector('img');
+  if(img) ovAuf(`<div class="ph"><img src="${esc(img.src)}" alt=""></div>`);
+};
+
+/* ---------------- Rechtstexte ---------------- */
+const LEGAL = {
+  impressum:`<div class="legal"><p class="label">Rechtliches</p>
+    <h3 style="font-family:var(--f-display);font-size:2rem;font-weight:400;margin:0 0 1.3rem">Impressum</h3>
+    <h4>Verantwortlich für den Inhalt</h4><p>boner maschinen<br>Inhaber: Ambrosi Boner<br>Oberdorfstrasse 36<br>7247 Saas im Prättigau, Schweiz</p>
+    <p>Werkstatt und Ausstellung: [Strasse und Nr.], 7240 Küblis</p>
+    <h4>Kontakt</h4><p>Telefon: 081 000 00 00<br>E-Mail: info@bonermaschinen.ch</p>
+    <h4>Handelsregister</h4><p>Rechtsform: Einzelunternehmen<br>UID: CHE-113.543.167<br>Handelsregister des Kantons Graubünden</p>
+    <h4>Mehrwertsteuer</h4><p>MWST-Nummer: [eintragen oder Abschnitt entfernen]</p>
+    <h4>Haftungsausschluss</h4><p>Die Inhalte dieser Website werden mit Sorgfalt erstellt. Für Richtigkeit, Vollständigkeit und Aktualität — insbesondere bei Angaben zu Occasionsmaschinen, Baujahren, Zuständen und Preisen — wird keine Gewähr übernommen. Angebote sind freibleibend und stellen keine verbindliche Offerte dar. Massgebend ist die schriftliche Bestätigung.</p>
+    <p>Für Inhalte externer Websites sind ausschliesslich deren Betreiber verantwortlich.</p>
+    <h4>Urheberrecht</h4><p>Texte, Bilder und Gestaltung dieser Website sind urheberrechtlich geschützt. Eine Verwendung ausserhalb der Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung der Rechteinhaber.</p>
+    <h4>Gestaltung und Umsetzung</h4><p>Voltrix — Webdesign für Schweizer KMU</p></div>`,
+
+  datenschutz:`<div class="legal"><p class="label">Rechtliches</p>
+    <h3 style="font-family:var(--f-display);font-size:2rem;font-weight:400;margin:0 0 1.3rem">Datenschutzerklärung</h3>
+    <p class="lead">Diese Erklärung beschreibt, wie boner maschinen Personendaten im Zusammenhang mit dieser Website bearbeitet. Grundlage ist das revidierte Schweizer Datenschutzgesetz (revDSG).</p>
+    <h4>1. Verantwortliche Stelle</h4><p>boner maschinen, Ambrosi Boner<br>Oberdorfstrasse 36, 7247 Saas im Prättigau<br>info@bonermaschinen.ch · 081 000 00 00</p>
+    <h4>2. Welche Daten bearbeitet werden</h4><ul>
+      <li><strong>Server-Logdaten:</strong> Beim Aufruf erfasst der Hosting-Anbieter technisch notwendige Angaben wie IP-Adresse, Zeitpunkt, aufgerufene Seite und Browsertyp. Diese dienen ausschliesslich dem sicheren Betrieb.</li>
+      <li><strong>Kontaktaufnahme:</strong> Bei Kontakt per E-Mail oder Telefon bearbeiten wir die mitgeteilten Angaben zur Beantwortung Ihrer Anfrage.</li>
+      <li><strong>Speicherung im Browser:</strong> Gespeichert wird nur, ob Sie den Datenschutzhinweis gesehen haben. Kein Tracking, keine Analyse, keine Werbemessung.</li></ul>
+    <h4>3. Zweck und Rechtsgrundlage</h4><p>Die Bearbeitung erfolgt zur Bereitstellung und Sicherheit der Website, zur Beantwortung von Anfragen sowie zur Anbahnung und Abwicklung von Geschäftsbeziehungen.</p>
+    <h4>4. Weitergabe an Dritte</h4><p>Personendaten werden nicht verkauft. Eine Weitergabe erfolgt nur, soweit für den Betrieb der Website oder die Auftragsabwicklung nötig, oder soweit gesetzlich vorgeschrieben.</p>
+    <h4>5. Hosting und externe Dienste</h4><p>Die Website wird bei Cloudflare gehostet; dabei können Daten auch ausserhalb der Schweiz bearbeitet werden. Für die Darstellung werden Schriften von Google Fonts geladen, wobei Ihre IP-Adresse an Google übermittelt wird. Eine lokale Auslieferung der Schriften ist auf Wunsch möglich.</p>
+    <h4>6. Aufbewahrung</h4><p>Daten werden so lange aufbewahrt, wie es der Zweck oder gesetzliche Fristen erfordern, danach gelöscht oder anonymisiert.</p>
+    <h4>7. Ihre Rechte</h4><p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Herausgabe Ihrer Daten sowie auf Widerspruch gegen die Bearbeitung. Zuständige Aufsichtsbehörde ist der EDÖB.</p>
+    <h4>8. Sicherheit</h4><p>Die Übertragung erfolgt verschlüsselt (HTTPS). Wir treffen angemessene technische und organisatorische Massnahmen zum Schutz Ihrer Daten.</p>
+    <h4>9. Änderungen</h4><p>Massgebend ist die jeweils auf dieser Seite veröffentlichte Fassung. Stand: [Datum eintragen]</p></div>`
+};
+document.querySelectorAll('[data-legal]').forEach(a => a.onclick = e => { e.preventDefault(); ovAuf(LEGAL[a.dataset.legal]); });
+
+/* ---------------- Header / Nav / Reveal ---------------- */
+const hdr = $('hdr');
+addEventListener('scroll', () => hdr.dataset.stuck = String(scrollY > 20), {passive:true});
+const nav = $('nav'), burger = $('burger');
+burger.onclick = () => { const o = nav.dataset.open === 'true'; nav.dataset.open = String(!o); burger.setAttribute('aria-expanded', String(!o)); };
+nav.querySelectorAll('a').forEach(a => a.onclick = () => { nav.dataset.open = 'false'; burger.setAttribute('aria-expanded','false'); });
+
+let io;
+function beobachte(){
+  if(!('IntersectionObserver' in window)){ document.querySelectorAll('.rv').forEach(el => el.classList.add('in')); return; }
+  io = io || new IntersectionObserver(es => es.forEach(en => {
+    if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+  }), {threshold:.1, rootMargin:'0px 0px -50px'});
+  document.querySelectorAll('.rv:not(.in)').forEach(el => io.observe(el));
+}
+
+try{ if(!localStorage.getItem('bm-ok')) $('cookie').hidden = false; }catch(e){}
+$('cookieOk').onclick = () => { $('cookie').hidden = true; try{ localStorage.setItem('bm-ok','1'); }catch(e){} };
+$('cprt').textContent = '© ' + new Date().getFullYear() + ' Voltrix – Website erstellt für boner maschinen';
+
+
+/* =====================================================================
+   VERWALTUNG
+   ===================================================================== */
+function toast(t, typ){
+  const el = $('toast'); el.textContent = t; el.dataset.t = typ || 'ok'; el.hidden = false;
+  clearTimeout(toast._t); toast._t = setTimeout(() => el.hidden = true, typ === 'err' ? 6500 : 3200);
+}
+
+function route(){
+  const admin = location.hash === '#verwaltung';
+  document.body.dataset.view = admin ? 'admin' : 'site';
+  if(admin && TOKEN) appAuf();
+}
+addEventListener('hashchange', route);
+$('backSite').onclick = () => { location.hash = ''; document.body.dataset.view = 'site'; };
+
+$('pwBtn').onclick = login;
+$('pw').onkeydown = e => { if(e.key === 'Enter') login(); };
+
+async function login(){
+  const btn = $('pwBtn'); btn.disabled = true;
+  try{
+    const r = await fetch('/api/login', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({passwort: $('pw').value})
+    });
+    const d = await r.json().catch(() => ({}));
+    if(!r.ok) throw new Error(d.fehler || 'Anmeldung fehlgeschlagen.');
+    TOKEN = d.token;
+    sessionStorage.setItem('bm-sitzung', TOKEN);
+    $('pw').value = '';
+    appAuf();
+  }catch(e){
+    toast(e.message,'err'); $('pw').select();
+  }finally{ btn.disabled = false; }
+}
+
+async function appAuf(){
+  $('aLogin').hidden = true; $('aApp').hidden = false;
+  await ladeAngebote();
+  $('aStat').textContent = `${DATEN.length} Maschinen`;
+  renderRows();
+}
+
+$('aOut').onclick = () => {
+  if(DIRTY && !confirm('Es gibt nicht veröffentlichte Änderungen. Trotzdem abmelden?')) return;
+  sessionStorage.removeItem('bm-sitzung'); TOKEN = '';
+  location.hash = ''; location.reload();
+};
+
+/* Liste */
+function renderRows(){
+  if(!DATEN.length){
+    $('aRows').innerHTML = '<div class="empty">Noch keine Maschine erfasst. Oben auf «Neue Maschine» tippen.</div>';
+    return;
+  }
+  $('aRows').innerHTML = DATEN.map((m,i) => `
+    <div class="a-row">
+      <div class="ph">${m.bilder && m.bilder[0] ? `<img src="${esc(m.bilder[0])}" alt="">` : ''}</div>
+      <div>
+        <div class="a-rt">${esc(m.titel || 'Ohne Bezeichnung')}</div>
+        <div class="a-rm">${esc(m.kategorie||'—')} · ${m.preis ? 'CHF ' + Number(m.preis).toLocaleString('de-CH') : 'auf Anfrage'} · ${esc(m.status||'verfügbar')} · ${(m.bilder||[]).length} Bild(er)</div>
+      </div>
+      <div class="a-ra">
+        <button class="ibtn" data-up="${i}" ${i===0?'disabled':''} aria-label="nach oben"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+        <button class="ibtn" data-dn="${i}" ${i===DATEN.length-1?'disabled':''} aria-label="nach unten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></button>
+        <button class="btn btn-g btn-sm" data-ed="${i}">Bearbeiten</button>
+      </div>
+    </div>`).join('');
+  $('aRows').querySelectorAll('[data-ed]').forEach(b => b.onclick = () => editor(+b.dataset.ed));
+  $('aRows').querySelectorAll('[data-up]').forEach(b => b.onclick = () => move(+b.dataset.up,-1));
+  $('aRows').querySelectorAll('[data-dn]').forEach(b => b.onclick = () => move(+b.dataset.dn, 1));
+}
+function move(i,d){
+  const j = i + d; if(j < 0 || j >= DATEN.length) return;
+  [DATEN[i],DATEN[j]] = [DATEN[j],DATEN[i]]; DIRTY = true; renderRows();
+}
+
+/* Editor */
+$('aNew').onclick = () => editor(null);
+$('aCancel').onclick = closeEditor;
+$('aApply').onclick = apply;
+$('aDel').onclick = del;
+$('aAddDetail').onclick = () => { ENTW.details.push({key:'',wert:''}); renderDetails(); };
+
+function editor(i){
+  AKT = i;
+  ENTW = i === null
+    ? {id:'m-'+Date.now().toString(36), titel:'', hersteller:'', kategorie:'Occasion', baujahr:'',
+       zustand:'', status:'verfügbar', preis:null, beschreibung:'', details:[], bilder:[]}
+    : JSON.parse(JSON.stringify(DATEN[i]));
+  ENTW.details = ENTW.details || []; ENTW.bilder = ENTW.bilder || [];
+
+  $('aEditTitle').textContent = i === null ? 'Neue Maschine' : 'Maschine bearbeiten';
+  $('aDel').hidden = (i === null);
+  ['titel','hersteller','kategorie','baujahr','zustand','status','beschreibung'].forEach(k => $('f_'+k).value = ENTW[k] || '');
+  $('f_preis').value = ENTW.preis ?? '';
+  renderDetails(); renderThumbs();
+  $('aList').hidden = true; $('aEdit').hidden = false;
+  scrollTo({top:0, behavior:'smooth'});
+}
+function closeEditor(){
+  $('aEdit').hidden = true; $('aList').hidden = false;
+  ENTW = null; AKT = null; renderRows();
+}
+function renderDetails(){
+  $('aDetails').innerHTML = ENTW.details.map((d,i) => `
+    <div style="display:grid;grid-template-columns:1fr 1fr 42px;gap:.55rem;margin-bottom:.55rem">
+      <input data-dk="${i}" value="${esc(d.key)}" placeholder="Bezeichnung">
+      <input data-dv="${i}" value="${esc(d.wert)}" placeholder="Wert">
+      <button class="ibtn" data-dx="${i}" aria-label="entfernen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    </div>`).join('');
+  $('aDetails').querySelectorAll('[data-dk]').forEach(el => el.oninput = () => ENTW.details[el.dataset.dk].key = el.value);
+  $('aDetails').querySelectorAll('[data-dv]').forEach(el => el.oninput = () => ENTW.details[el.dataset.dv].wert = el.value);
+  $('aDetails').querySelectorAll('[data-dx]').forEach(el => el.onclick = () => { ENTW.details.splice(+el.dataset.dx,1); renderDetails(); });
+}
+function renderThumbs(){
+  $('aThumbs').innerHTML = ENTW.bilder.map((b,i) =>
+    `<div class="tw"><img src="${esc(b)}" alt=""><button data-bx="${i}" aria-label="Bild entfernen">×</button></div>`).join('');
+  $('aThumbs').querySelectorAll('[data-bx]').forEach(el => el.onclick = () => { ENTW.bilder.splice(+el.dataset.bx,1); renderThumbs(); });
+}
+function apply(){
+  const titel = $('f_titel').value.trim();
+  if(!titel){ toast('Bitte eine Bezeichnung eingeben.','err'); $('f_titel').focus(); return; }
+  const p = $('f_preis').value.replace(/[^\d.]/g,'');
+  Object.assign(ENTW, {
+    titel,
+    hersteller:$('f_hersteller').value.trim(),
+    kategorie:$('f_kategorie').value.trim() || 'Occasion',
+    baujahr:$('f_baujahr').value.trim(),
+    zustand:$('f_zustand').value.trim(),
+    status:$('f_status').value,
+    preis:p ? Number(p) : null,
+    beschreibung:$('f_beschreibung').value.trim(),
+    details:ENTW.details.filter(d => d.key || d.wert)
+  });
+  if(AKT === null) DATEN.unshift(ENTW); else DATEN[AKT] = ENTW;
+  DIRTY = true;
+  toast('Übernommen. Jetzt oben «Veröffentlichen» tippen.');
+  closeEditor();
+}
+function del(){
+  if(AKT === null) return;
+  if(!confirm(`«${DATEN[AKT].titel}» wirklich entfernen?`)) return;
+  DATEN.splice(AKT,1); DIRTY = true;
+  toast('Entfernt. Jetzt oben «Veröffentlichen» tippen.');
+  closeEditor();
+}
+
+/* Bilder */
+$('aFile').onchange = async e => {
+  const files = [...e.target.files]; e.target.value = '';
+  for(const f of files){
+    try{
+      toast(`Lade «${f.name}» hoch …`);
+      const blob = await verkleinern(f);
+      const r = await fetch('/api/bild', {
+        method:'POST',
+        headers:{'Content-Type':'image/jpeg','x-sitzung':TOKEN},
+        body: blob
+      });
+      const d = await r.json().catch(() => ({}));
+      if(!r.ok) throw new Error(d.fehler || 'Upload fehlgeschlagen.');
+      ENTW.bilder.push(d.url); renderThumbs();
+      toast('Bild hochgeladen.');
+    }catch(err){ toast('Bild fehlgeschlagen: ' + err.message,'err'); }
+  }
+};
+function verkleinern(file){
+  return new Promise((res,rej) => {
+    const fr = new FileReader();
+    fr.onerror = () => rej(new Error('Datei nicht lesbar.'));
+    fr.onload = () => {
+      const img = new Image();
+      img.onerror = () => rej(new Error('Kein gültiges Bild.'));
+      img.onload = () => {
+        const s = Math.min(1, 1600 / img.width);
+        const c = document.createElement('canvas');
+        c.width = Math.round(img.width*s); c.height = Math.round(img.height*s);
+        const x = c.getContext('2d');
+        x.fillStyle = '#fff'; x.fillRect(0,0,c.width,c.height);
+        x.drawImage(img,0,0,c.width,c.height);
+        c.toBlob(b => b ? res(b) : rej(new Error('Konvertierung fehlgeschlagen.')), 'image/jpeg', 0.82);
+      };
+      img.src = fr.result;
+    };
+    fr.readAsDataURL(file);
+  });
+}
+
+/* Veröffentlichen */
+$('aSave').onclick = async () => {
+  const btn = $('aSave'), alt = btn.textContent;
+  btn.disabled = true; btn.textContent = 'Speichert …';
+  try{
+    const r = await fetch('/api/angebote', {
+      method:'PUT',
+      headers:{'Content-Type':'application/json','x-sitzung':TOKEN},
+      body: JSON.stringify(DATEN)
+    });
+    const d = await r.json().catch(() => ({}));
+    if(r.status === 401){ toast('Sitzung abgelaufen. Bitte neu anmelden.','err'); return; }
+    if(!r.ok) throw new Error(d.fehler || 'Speichern fehlgeschlagen.');
+    DIRTY = false;
+    $('aStat').textContent = `${DATEN.length} Maschinen · gespeichert`;
+    toast('Veröffentlicht. Die Website ist sofort aktuell.');
+  }catch(e){
+    toast(e.message,'err');
+  }finally{ btn.disabled = false; btn.textContent = alt; }
+};
+addEventListener('beforeunload', e => { if(DIRTY){ e.preventDefault(); e.returnValue = ''; } });
+
+/* Start */
+beobachte(); route(); ladeAngebote();
+</script>
+</body>
+</html>
