@@ -991,7 +991,9 @@ async function login(){
 }
 
 async function appAuf(){
-  $('aLogin').hidden = true; $('aApp').hidden = false;
+  const l = $('aLogin'), a = $('aApp');
+  l.hidden = true;  l.style.display = 'none';
+  a.hidden = false; a.style.display = 'block';
   await ladeAngebote();
   $('aStat').textContent = `${DATEN.length} Maschinen`;
   renderRows();
@@ -1048,14 +1050,17 @@ function editor(i){
 
   $('aEditTitle').textContent = i === null ? 'Neue Maschine' : 'Maschine bearbeiten';
   $('aDel').hidden = (i === null);
+  $('aDel').style.display = (i === null) ? 'none' : '';
   ['titel','hersteller','kategorie','baujahr','zustand','status','beschreibung'].forEach(k => $('f_'+k).value = ENTW[k] || '');
   $('f_preis').value = ENTW.preis ?? '';
   renderDetails(); renderThumbs();
-  $('aList').hidden = true; $('aEdit').hidden = false;
+  $('aList').hidden = true;  $('aList').style.display = 'none';
+  $('aEdit').hidden = false; $('aEdit').style.display = 'block';
   scrollTo({top:0, behavior:'smooth'});
 }
 function closeEditor(){
-  $('aEdit').hidden = true; $('aList').hidden = false;
+  $('aEdit').hidden = true;  $('aEdit').style.display = 'none';
+  $('aList').hidden = false; $('aList').style.display = 'block';
   ENTW = null; AKT = null; renderRows();
 }
 function renderDetails(){
