@@ -3,363 +3,280 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>boner maschinen — Holzbearbeitungsmaschinen, Service &amp; Occasionen | Küblis</title>
-<meta name="description" content="Service, Reparatur und Verkauf von Holzbearbeitungsmaschinen für Schreinereien. Neumaschinen und geprüfte Occasionen aus dem Prättigau.">
-<meta name="theme-color" content="#FFFFFF">
+<title>boner maschinen — Maschinen und Service für Schreiner | Küblis</title>
+<meta name="description" content="Service, Reparatur und Verkauf von Holzbearbeitungsmaschinen für Schreinereien. Neumaschinen und geprüfte Occasionen aus dem Prättigau — inhabergeführt seit der Gründung.">
+<meta name="theme-color" content="#0B7CC9">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FFFFFF'/><circle cx='16' cy='16' r='7' fill='none' stroke='%230B7CC9' stroke-width='2.5'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230B7CC9'/><circle cx='16' cy='16' r='7' fill='none' stroke='%23fff' stroke-width='2.5'/></svg>">
 
 <style>
 /* =====================================================================
    boner maschinen — Voltrix 2026
-   Hell. Weiss, Schwarz, Schattierung. Blau nur als Akzent.
+   Aufbau nach Vorbild bruendler.ch, Rot durchgehend durch Boner-Blau ersetzt
    ===================================================================== */
 
 :root{
+  --blau:#0B7CC9;
+  --blau-hell:#38ABE3;
+  --blau-dunkel:#075A93;
+  --blau-zart:#EAF4FC;
+
+  --ink:#101418;
+  --ink-2:#4C555F;
+  --ink-3:#8D959E;
   --paper:#FFFFFF;
-  --soft:#F5F6F8;
-  --soft-2:#EDEFF2;
-  --ink:#0B0E13;
-  --ink-2:#565D67;
-  --ink-3:#949BA4;
-  --line:#E4E7EB;
-  --line-2:#D3D8DE;
+  --soft:#F4F6F8;
+  --soft-2:#E9EDF1;
+  --line:#DFE4E9;
 
-  --blue:#0B7CC9;
-  --blue-lt:#38ABE3;
-  --blue-dk:#075A93;
-  --blue-soft:#EAF4FC;
+  --f:"Inter",-apple-system,"Segoe UI",sans-serif;
 
-  --f-display:"Jost",-apple-system,"Segoe UI",sans-serif;
-  --f-body:"Inter",-apple-system,"Segoe UI",sans-serif;
-
-  --r-sm:12px; --r-md:18px; --r-lg:26px; --r-xl:36px;
-  --wrap:1220px;
-
-  --sh-1:0 1px 2px rgba(11,14,19,.04), 0 4px 14px -8px rgba(11,14,19,.10);
-  --sh-2:0 2px 5px rgba(11,14,19,.04), 0 20px 44px -20px rgba(11,14,19,.20);
-  --sh-3:0 40px 90px -40px rgba(11,14,19,.35);
+  --r:6px;
+  --r-lg:10px;
+  --wrap:1280px;
+  --sh:0 1px 2px rgba(16,20,24,.05),0 10px 28px -14px rgba(16,20,24,.16);
+  --sh-2:0 4px 10px rgba(16,20,24,.06),0 26px 54px -22px rgba(16,20,24,.28);
 }
 
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
-}
-body{
-  margin:0;font-family:var(--f-body);font-size:17px;line-height:1.62;
-  color:var(--ink);background:var(--paper);
-  -webkit-font-smoothing:antialiased;overflow-x:hidden;
-}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+body{margin:0;font-family:var(--f);font-size:17px;line-height:1.62;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:inherit}
 button{font:inherit;cursor:pointer}
 [hidden]{display:none!important}
-:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
+:focus-visible{outline:3px solid var(--blau-hell);outline-offset:2px}
 
-h1,h2,h3,h4{font-family:var(--f-display);font-weight:400;letter-spacing:-.022em;line-height:1.06;margin:0 0 .5em}
-h1{font-size:clamp(2.8rem,6.6vw,5.2rem)}
-h2{font-size:clamp(2rem,4.4vw,3.4rem)}
-h3{font-size:1.2rem;font-weight:500;font-family:var(--f-body);letter-spacing:-.012em}
+h1,h2,h3,h4{font-family:var(--f);font-weight:600;letter-spacing:-.025em;line-height:1.1;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,5.4vw,4.2rem);font-weight:700;letter-spacing:-.035em}
+h2{font-size:clamp(1.9rem,3.8vw,3rem)}
+h3{font-size:1.22rem}
 p{margin:0 0 1.1em}
 
-.label{
-  display:inline-flex;align-items:center;gap:.65rem;
-  font-size:.71rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--blue);margin:0 0 1.4rem;
-}
-.label::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue)}
-.lead{font-size:clamp(1.02rem,1.5vw,1.16rem);color:var(--ink-2);max-width:60ch;font-weight:300}
+.label{display:inline-block;font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--blau);margin:0 0 1rem}
+.lead{font-size:clamp(1rem,1.4vw,1.14rem);color:var(--ink-2);max-width:62ch;font-weight:400}
 
-.wordmark{font-family:var(--f-display);font-weight:400;letter-spacing:-.03em;line-height:1;white-space:nowrap}
-
-.wrap{width:min(100% - 2.6rem,var(--wrap));margin-inline:auto}
-section{padding-block:clamp(4.2rem,9vw,8rem);position:relative}
+.wrap{width:min(100% - 2.4rem,var(--wrap));margin-inline:auto}
+section{padding-block:clamp(3.6rem,7vw,6.5rem)}
 .soft{background:var(--soft)}
-.head{max-width:64ch;margin-bottom:clamp(2.4rem,5vw,4rem)}
+.head{max-width:66ch;margin-bottom:clamp(2rem,4vw,3.2rem)}
 
-/* ---------- Header ---------- */
-.hdr{
-  position:fixed;top:0;left:0;right:0;z-index:80;
-  border-bottom:1px solid transparent;transition:background .35s,border-color .35s,backdrop-filter .35s;
-}
-.hdr[data-stuck="true"]{
-  background:rgba(255,255,255,.82);
-  backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
-  border-bottom-color:var(--line);
-}
-.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.6rem;min-height:76px}
+/* ---------- Kopf ---------- */
+.hdr{position:sticky;top:0;z-index:80;background:var(--paper);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:78px}
 .brandlink{display:flex;align-items:center;gap:.8rem;text-decoration:none;color:var(--ink)}
-.mark{
-  width:36px;height:36px;flex:none;border-radius:11px;
-  background:var(--blue-soft);border:1px solid rgba(11,124,201,.16);
-  display:grid;place-items:center;
-}
-.mark svg{width:18px;height:18px}
-.brandlink .wordmark{font-size:1.3rem}
+.mark{width:40px;height:40px;flex:none;border-radius:var(--r);background:var(--blau);display:grid;place-items:center}
+.mark svg{width:21px;height:21px}
+.wordmark{font-weight:600;font-size:1.28rem;letter-spacing:-.035em;line-height:1;white-space:nowrap;color:var(--blau)}
+.wordmark small{display:block;font-size:.62rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-top:.22rem}
 
-.nav{display:flex;align-items:center;gap:2rem}
-.nav a{text-decoration:none;font-size:.92rem;color:var(--ink-2);transition:color .25s}
-.nav a:hover{color:var(--ink)}
-.tel-pill{
-  display:inline-flex;align-items:center;gap:.5rem;padding:.58rem 1.1rem;border-radius:100px;
-  border:1px solid var(--line-2);color:var(--ink)!important;font-size:.87rem;font-weight:500;
-  background:var(--paper);transition:all .28s;
-}
-.tel-pill:hover{border-color:var(--blue);color:var(--blue)!important}
-.tel-pill svg{width:14px;height:14px;color:var(--blue)}
-.burger{display:none;width:42px;height:42px;border-radius:11px;background:var(--paper);border:1px solid var(--line-2);place-items:center;color:var(--ink)}
+.nav{display:flex;align-items:center;gap:1.9rem}
+.nav a{text-decoration:none;font-size:.93rem;font-weight:500;color:var(--ink-2);padding-block:.4rem;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav a:hover{color:var(--blau);border-bottom-color:var(--blau)}
+.tel-pill{display:inline-flex;align-items:center;gap:.5rem;background:var(--blau);color:#fff!important;padding:.72rem 1.25rem;border-radius:var(--r);font-size:.86rem;font-weight:600;border-bottom:0!important}
+.tel-pill:hover{background:var(--blau-dunkel)}
+.tel-pill svg{width:15px;height:15px}
+.burger{display:none;width:44px;height:44px;border-radius:var(--r);background:var(--soft);border:1px solid var(--line);place-items:center;color:var(--ink)}
 
-@media(max-width:960px){
+@media(max-width:1000px){
   .burger{display:grid}
-  .nav{
-    position:fixed;inset:76px 1.3rem auto;flex-direction:column;align-items:stretch;gap:0;
-    background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);
-    padding:.4rem 1.3rem 1rem;box-shadow:var(--sh-2);
-    opacity:0;transform:translateY(-12px) scale(.98);pointer-events:none;
-    transition:all .3s cubic-bezier(.3,.9,.3,1);
-  }
+  .nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:.3rem 1.2rem 1.1rem;box-shadow:var(--sh);opacity:0;transform:translateY(-10px);pointer-events:none;transition:all .25s}
   .nav[data-open="true"]{opacity:1;transform:none;pointer-events:auto}
-  .nav a{padding:.95rem 0;border-bottom:1px solid var(--line);font-size:1rem}
-  .nav a:last-of-type{border-bottom:0}
+  .nav a{padding:.95rem 0;border-bottom:1px solid var(--line)}
+  .nav a:hover{border-bottom-color:var(--line)}
   .tel-pill{display:none}
 }
 
-/* ---------- Buttons ---------- */
-.btn{
-  display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.8rem;border-radius:100px;
-  font-size:.94rem;font-weight:500;text-decoration:none;border:1px solid transparent;
-  transition:all .28s cubic-bezier(.3,.9,.3,1);white-space:nowrap;
-}
-.btn svg{width:15px;height:15px;transition:transform .28s}
-.btn-p{background:var(--ink);color:var(--paper);box-shadow:var(--sh-1)}
-.btn-p:hover{transform:translateY(-2px);box-shadow:var(--sh-2)}
-.btn-p:hover svg{transform:translateX(3px)}
-.btn-b{background:var(--blue);color:#fff;box-shadow:0 12px 30px -14px rgba(11,124,201,.8)}
-.btn-b:hover{background:var(--blue-dk);transform:translateY(-2px)}
-.btn-g{background:var(--paper);border-color:var(--line-2);color:var(--ink)}
-.btn-g:hover{border-color:var(--ink);transform:translateY(-2px)}
-.btn-w{background:var(--paper);color:var(--ink)}
-.btn-w:hover{transform:translateY(-2px)}
-.btn-sm{padding:.68rem 1.3rem;font-size:.86rem}
+/* ---------- Knöpfe ---------- */
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.9rem;border-radius:var(--r);font-size:.82rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;transition:all .25s;white-space:nowrap}
+.btn svg{width:15px;height:15px;transition:transform .25s}
+.btn-b{background:var(--blau);color:#fff}
+.btn-b:hover{background:var(--blau-dunkel)}
+.btn-b:hover svg{transform:translateX(3px)}
+.btn-p{background:var(--ink);color:#fff}
+.btn-p:hover{background:#000}
+.btn-g{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-g:hover{border-color:var(--blau);color:var(--blau)}
+.btn-w{background:#fff;color:var(--blau)}
+.btn-w:hover{background:var(--blau-zart)}
+.btn-o{background:transparent;border-color:rgba(255,255,255,.6);color:#fff}
+.btn-o:hover{background:#fff;color:var(--blau);border-color:#fff}
+.btn-sm{padding:.66rem 1.2rem;font-size:.74rem}
 
 /* ---------- Hero ---------- */
-.hero{padding-top:clamp(8.5rem,15vw,12rem);padding-bottom:clamp(3rem,6vw,5rem)}
-.hero::before{
-  content:"";position:absolute;inset:0;z-index:-1;
-  background:radial-gradient(760px 420px at 88% 4%,rgba(56,171,227,.13),transparent 66%);
+.hero{position:relative;background:var(--soft-2)}
+.hero-img{position:relative;min-height:clamp(420px,58vw,660px)}
+.hero-img .ph{position:absolute;inset:0;border-radius:0;border:0;height:100%;aspect-ratio:auto}
+.hero-box{
+  position:relative;background:var(--blau);color:#fff;
+  padding:clamp(2rem,4vw,3.4rem);border-radius:var(--r-lg);
+  max-width:560px;margin:-140px 0 0 0;box-shadow:var(--sh-2);
 }
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
-.hero h1{margin-bottom:.32em}
-.hero h1 .thin{color:var(--ink-3)}
-.hero h1 .hl{color:var(--blue)}
-.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
-.hero-stats{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:1px;
-  margin-top:3rem;background:var(--line);border:1px solid var(--line);
-  border-radius:var(--r-md);overflow:hidden;
-}
-.hero-stats div{background:var(--paper);padding:1.15rem 1.25rem}
-.hero-stats b{display:block;font-family:var(--f-display);font-size:1.45rem;font-weight:400;margin-bottom:.1rem}
-.hero-stats span{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.hero .wrap{padding-bottom:clamp(2rem,4.5vw,3.6rem)}
+.hero-box h1{margin-bottom:.5rem}
+.hero-box p{color:rgba(255,255,255,.9);font-size:1.05rem;margin-bottom:2rem}
+@media(max-width:700px){.hero-box{margin-top:-70px}}
 
 /* ---------- Bild-Platzhalter ---------- */
 .ph{
-  position:relative;overflow:hidden;border-radius:var(--r-lg);
-  background:
-    linear-gradient(160deg,var(--soft),var(--soft-2)),
-    repeating-linear-gradient(135deg,transparent 0 11px,rgba(11,14,19,.022) 11px 22px);
+  position:relative;overflow:hidden;border-radius:var(--r);
+  background:linear-gradient(160deg,var(--soft),var(--soft-2)),
+    repeating-linear-gradient(135deg,transparent 0 12px,rgba(16,20,24,.022) 12px 24px);
   border:1px solid var(--line);display:grid;place-items:center;aspect-ratio:4/3;
-  box-shadow:var(--sh-1);
 }
-.ph::after{
-  content:attr(data-label);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--ink-3);text-align:center;padding:.55rem 1.05rem;max-width:82%;
-  border:1px solid var(--line-2);border-radius:100px;background:rgba(255,255,255,.75);
-}
+.ph::after{content:attr(data-label);font-size:.66rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);text-align:center;padding:.5rem 1rem;max-width:84%;background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:var(--r)}
 .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ph:has(img)::after{display:none}
-.ph-tall{aspect-ratio:4/5}
 .ph-wide{aspect-ratio:16/10}
-.r-md{border-radius:var(--r-md)}
 
-/* ---------- Banner ---------- */
-.banner{
-  width:min(100% - 2.6rem,var(--wrap));margin-inline:auto;
-  padding-block:clamp(2.4rem,4.6vw,3.8rem);border-radius:var(--r-xl);
-  background:linear-gradient(118deg,var(--blue-lt) 0%,#1E93D5 48%,var(--blue-dk) 100%);
-  position:relative;overflow:hidden;box-shadow:0 40px 80px -44px rgba(11,124,201,.7);
-}
-.banner::before{
-  content:"";position:absolute;inset:0;
-  background:radial-gradient(640px 280px at 18% -35%,rgba(255,255,255,.34),transparent 62%);
-}
-.banner-inner{position:relative;text-align:center;padding-inline:1.4rem}
-.banner .wordmark{font-size:clamp(2rem,8.2vw,6rem);color:#fff;display:block;margin-bottom:.35rem}
-.banner p{margin:0;color:rgba(255,255,255,.92);font-weight:300;font-size:clamp(.82rem,1.6vw,1rem);letter-spacing:.2em;text-transform:uppercase}
+/* ---------- Aktuell ---------- */
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.4rem}
+.news article{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .3s,transform .3s}
+.news article:hover{box-shadow:var(--sh-2);transform:translateY(-3px)}
+.news .ph{border:0;border-radius:0;border-bottom:1px solid var(--line)}
+.news div{padding:1.5rem 1.6rem 1.7rem}
+.news h3{margin-bottom:.6rem}
+.news p{font-size:.93rem;color:var(--ink-2);margin-bottom:1.1rem}
+.mehr{display:inline-flex;align-items:center;gap:.45rem;font-size:.84rem;font-weight:600;color:var(--blau);text-decoration:none}
+.mehr svg{width:14px;height:14px;transition:transform .25s}
+.mehr:hover svg{transform:translateX(3px)}
 
-/* ---------- Karten ---------- */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(1rem,1.8vw,1.5rem)}
-.card{
-  background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);
-  padding:clamp(1.6rem,3vw,2.2rem);box-shadow:var(--sh-1);
-  transition:transform .4s cubic-bezier(.3,.9,.3,1),box-shadow .4s,border-color .4s;
-}
-.card:hover{transform:translateY(-5px);box-shadow:var(--sh-2);border-color:var(--line-2)}
-.card-ico{
-  width:46px;height:46px;border-radius:14px;display:grid;place-items:center;margin-bottom:1.4rem;
-  background:var(--blue-soft);border:1px solid rgba(11,124,201,.14);
-}
-.card-ico svg{width:22px;height:22px;color:var(--blue)}
-.card p{margin:0;color:var(--ink-2);font-size:.93rem;font-weight:300}
+/* ---------- Kompetenzfelder ---------- */
+.felder{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.4rem}
+.feld{position:relative;border-radius:var(--r-lg);overflow:hidden;min-height:380px;display:flex;align-items:flex-end;text-decoration:none;color:#fff;background:var(--ink)}
+.feld .ph{position:absolute;inset:0;border:0;border-radius:0;height:100%;aspect-ratio:auto}
+.feld::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,124,201,.94) 0%,rgba(11,124,201,.62) 42%,rgba(16,20,24,.15) 100%);transition:opacity .35s}
+.feld:hover::after{opacity:.88}
+.feld > div{position:relative;z-index:2;padding:1.9rem}
+.feld h3{font-size:1.5rem;margin-bottom:.5rem}
+.feld p{font-size:.93rem;color:rgba(255,255,255,.88);margin-bottom:1.1rem}
+.feld .mehr{color:#fff}
+
+/* ---------- Warum ---------- */
+.warum-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.checks{list-style:none;margin:0;padding:0}
+.checks li{display:flex;gap:.9rem;padding:.95rem 0;border-bottom:1px solid var(--line);font-weight:500}
+.checks li:first-child{border-top:1px solid var(--line)}
+.checks svg{width:20px;height:20px;flex:none;color:var(--blau);margin-top:.15rem}
+@media(max-width:860px){.warum-grid{grid-template-columns:1fr}}
+
+/* ---------- Farbige Blöcke ---------- */
+.panel{background:var(--blau);color:#fff;border-radius:var(--r-lg);padding:clamp(2rem,4.5vw,3.6rem);display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,4rem);align-items:center}
+.panel h2{margin-bottom:.7rem}
+.panel p{color:rgba(255,255,255,.9);margin-bottom:1.8rem}
+.panel .ph{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.09)}
+.panel .ph::after{background:rgba(11,124,201,.7);border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.85)}
+.panel-dark{background:var(--ink)}
+@media(max-width:860px){.panel{grid-template-columns:1fr}}
 
 /* ---------- Occasionen ---------- */
-.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.4rem}
-.filter{
-  padding:.58rem 1.25rem;border-radius:100px;font-size:.85rem;
-  background:var(--paper);border:1px solid var(--line-2);color:var(--ink-2);transition:all .26s;
-}
-.filter:hover{border-color:var(--ink-3);color:var(--ink)}
-.filter[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:500}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.2rem}
+.filter{padding:.62rem 1.3rem;border-radius:var(--r);font-size:.83rem;font-weight:500;background:var(--paper);border:1px solid var(--line);color:var(--ink-2);transition:all .22s}
+.filter:hover{border-color:var(--blau);color:var(--blau)}
+.filter[aria-pressed="true"]{background:var(--blau);border-color:var(--blau);color:#fff;font-weight:600}
 
-.grid-m{display:grid;grid-template-columns:repeat(auto-fill,minmax(305px,1fr));gap:clamp(1.1rem,2vw,1.7rem)}
-.machine{
-  text-align:left;padding:0;background:var(--paper);border:1px solid var(--line);
-  border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;color:var(--ink);
-  box-shadow:var(--sh-1);
-  transition:transform .42s cubic-bezier(.3,.9,.3,1),box-shadow .42s,border-color .42s;
-}
-.machine:hover{transform:translateY(-6px);box-shadow:var(--sh-2);border-color:var(--line-2)}
+.grid-m{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.4rem}
+.machine{text-align:left;padding:0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;color:var(--ink);transition:box-shadow .3s,transform .3s,border-color .3s}
+.machine:hover{box-shadow:var(--sh-2);transform:translateY(-3px);border-color:var(--blau)}
 .m-img{position:relative}
-.m-img .ph{border:0;border-radius:0;aspect-ratio:4/3;box-shadow:none;border-bottom:1px solid var(--line)}
-.m-tag{
-  position:absolute;top:.9rem;right:.9rem;z-index:2;font-size:.67rem;letter-spacing:.14em;
-  text-transform:uppercase;font-weight:500;padding:.38rem .8rem;border-radius:100px;
-  background:rgba(255,255,255,.94);border:1px solid var(--line-2);backdrop-filter:blur(8px);
-}
-.m-tag[data-s="reserviert"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.m-img .ph{border:0;border-radius:0;aspect-ratio:4/3;border-bottom:1px solid var(--line)}
+.m-tag{position:absolute;top:.85rem;right:.85rem;z-index:2;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.38rem .8rem;border-radius:var(--r);background:#fff;border:1px solid var(--line);color:var(--ink-2)}
+.m-tag[data-s="reserviert"]{background:var(--blau);border-color:var(--blau);color:#fff}
 .m-tag[data-s="verkauft"]{background:var(--ink);border-color:var(--ink);color:#fff}
-.m-count{
-  position:absolute;left:.9rem;bottom:.9rem;z-index:2;display:inline-flex;align-items:center;gap:.38rem;
-  font-size:.69rem;font-weight:500;padding:.34rem .75rem;border-radius:100px;
-  background:rgba(255,255,255,.94);border:1px solid var(--line-2);color:var(--ink-2);backdrop-filter:blur(8px);
-}
+.m-count{position:absolute;left:.85rem;bottom:.85rem;z-index:2;display:inline-flex;align-items:center;gap:.38rem;font-size:.7rem;font-weight:600;padding:.34rem .75rem;border-radius:var(--r);background:rgba(255,255,255,.95);border:1px solid var(--line);color:var(--ink-2)}
 .m-count svg{width:12px;height:12px}
-.m-body{padding:1.45rem 1.55rem 1.6rem;display:flex;flex-direction:column;flex:1}
-.m-brand{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:.55rem;font-weight:500}
-.m-body h3{margin-bottom:.65rem}
-.m-desc{
-  font-size:.89rem;color:var(--ink-2);font-weight:300;margin:0 0 1.4rem;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
-}
+.m-body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;flex:1}
+.m-brand{font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--blau);margin-bottom:.5rem}
+.m-body h3{margin-bottom:.6rem;font-size:1.12rem}
+.m-desc{font-size:.9rem;color:var(--ink-2);margin:0 0 1.3rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .m-foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;padding-top:1.1rem;border-top:1px solid var(--line)}
-.m-meta{font-size:.75rem;color:var(--ink-3);line-height:1.5}
-.m-price{font-family:var(--f-display);font-size:1.38rem;font-weight:400;white-space:nowrap;text-align:right}
-.m-price small{display:block;font-size:.59rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-family:var(--f-body)}
-.empty{grid-column:1/-1;border:1px dashed var(--line-2);border-radius:var(--r-lg);padding:3.6rem 1.5rem;text-align:center;color:var(--ink-3);font-size:.92rem}
+.m-meta{font-size:.76rem;color:var(--ink-3);line-height:1.5}
+.m-price{font-size:1.3rem;font-weight:700;letter-spacing:-.02em;white-space:nowrap;text-align:right;color:var(--blau)}
+.m-price small{display:block;font-size:.6rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.empty{grid-column:1/-1;border:1px dashed var(--line);border-radius:var(--r-lg);padding:3.4rem 1.5rem;text-align:center;color:var(--ink-3)}
 
-/* ---------- Betrieb ---------- */
-.story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
-.story-imgs{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.story-imgs .ph:first-child{grid-row:span 2;aspect-ratio:3/4.7}
-.tl{margin-top:2.2rem}
-.tl > div{display:grid;grid-template-columns:84px 1fr;gap:1.4rem;padding:1.25rem 0;border-top:1px solid var(--line)}
-.tl > div:last-child{border-bottom:1px solid var(--line)}
-.tl-when{font-family:var(--f-display);font-size:1rem;color:var(--blue);padding-top:.08rem}
-.tl strong{display:block;font-weight:500;margin-bottom:.2rem;font-size:1rem}
-.tl p{margin:0;font-size:.89rem;color:var(--ink-2);font-weight:300}
-@media(max-width:900px){.story-grid{grid-template-columns:1fr}}
+/* ---------- Marken ---------- */
+.marken{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+.marken div{background:var(--paper);aspect-ratio:5/2;display:grid;place-items:center;font-size:.68rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);text-align:center;padding:.8rem}
 
-/* ---------- Galerie ---------- */
-.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:1rem}
-.gal .ph{cursor:zoom-in;transition:transform .42s cubic-bezier(.3,.9,.3,1),box-shadow .42s}
-.gal .ph:hover{transform:scale(1.015);box-shadow:var(--sh-2)}
+/* ---------- Referenzen ---------- */
+.refs{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.4rem}
+.ref{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--blau);border-radius:var(--r-lg);padding:1.9rem 1.8rem}
+.ref-firma{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blau);margin-bottom:.2rem}
+.ref-ort{font-size:.78rem;color:var(--ink-3);margin-bottom:1.2rem}
+.ref h3{margin-bottom:.8rem;font-size:1.16rem}
+.ref p{font-size:.93rem;color:var(--ink-2);margin:0;font-style:italic}
 
-/* ---------- Kontakt (dunkel) ---------- */
-.dark{background:var(--ink);color:#fff}
-.dark .label{color:var(--blue-lt)}
-.dark .label::before{background:var(--blue-lt)}
-.dark .lead{color:rgba(255,255,255,.66)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4.5vw,4.5rem)}
-.klist > div{display:grid;grid-template-columns:108px 1fr;gap:1.2rem;padding:1.05rem 0;border-top:1px solid rgba(255,255,255,.12)}
-.klist > div:last-child{border-bottom:1px solid rgba(255,255,255,.12)}
-.kkey{font-size:.69rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.42);padding-top:.24rem}
-.kval{font-size:.97rem;font-weight:300}
-.kval a{text-decoration:none;border-bottom:1px solid rgba(56,171,227,.55);transition:color .25s}
-.kval a:hover{color:var(--blue-lt)}
-.mapbox{
-  border-radius:var(--r-lg);border:1px solid rgba(255,255,255,.13);aspect-ratio:4/3;
-  background:linear-gradient(150deg,rgba(56,171,227,.12),rgba(255,255,255,.02));
-  display:grid;place-items:center;text-align:center;padding:2rem;
-}
-.mapbox span{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.42);line-height:2}
-@media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+/* ---------- Kontakt ---------- */
+.kontakt-cta{background:var(--blau);color:#fff;text-align:center;padding-block:clamp(3.4rem,6vw,5.5rem)}
+.kontakt-cta h2{max-width:22ch;margin-inline:auto;margin-bottom:.8rem}
+.kontakt-cta p{color:rgba(255,255,255,.9);max-width:56ch;margin:0 auto 2rem}
+.klist{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+.klist > div{background:var(--paper);padding:1.6rem 1.7rem}
+.kkey{display:block;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.6rem}
+.kval{font-size:.98rem;line-height:1.7}
+.kval a{color:var(--blau);text-decoration:none;font-weight:500}
+.kval a:hover{text-decoration:underline}
+.mapbox{margin-top:1.4rem;border:1px solid var(--line);border-radius:var(--r-lg);aspect-ratio:21/7;background:linear-gradient(150deg,var(--blau-zart),var(--soft));display:grid;place-items:center;text-align:center;padding:2rem}
+.mapbox span{font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);line-height:2}
 
-/* ---------- Footer ---------- */
-.ftr{background:var(--ink);color:rgba(255,255,255,.45);border-top:1px solid rgba(255,255,255,.1);padding-block:2.6rem}
-.ftr .wrap{display:flex;flex-wrap:wrap;gap:1.2rem 2.4rem;justify-content:space-between;align-items:center}
-.ftr small{font-size:.82rem}
-.flinks{display:flex;flex-wrap:wrap;gap:1.6rem}
-.flinks a{color:rgba(255,255,255,.45);text-decoration:none;font-size:.84rem;transition:color .25s}
-.flinks a:hover{color:#fff}
+/* ---------- Fuss ---------- */
+.ftr{background:var(--ink);color:rgba(255,255,255,.6);padding-block:3.2rem 2rem}
+.ftr-top{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2.4rem;padding-bottom:2.4rem;border-bottom:1px solid rgba(255,255,255,.13)}
+.ftr .wordmark{color:#fff}
+.ftr h4{color:#fff;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.1rem}
+.ftr a{color:rgba(255,255,255,.6);text-decoration:none}
+.ftr a:hover{color:#fff}
+.ftr-links{display:grid;gap:.6rem;font-size:.9rem}
+.ftr-bot{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;padding-top:1.6rem;font-size:.82rem}
+.flinks{display:flex;flex-wrap:wrap;gap:1.5rem}
+@media(max-width:860px){.ftr-top{grid-template-columns:1fr}}
 
 /* ---------- Sticky Anruf ---------- */
 .sticky-call{display:none}
-@media(max-width:960px){
-  .sticky-call{
-    display:flex;position:fixed;left:1.1rem;right:1.1rem;bottom:1.1rem;z-index:70;
-    align-items:center;justify-content:center;gap:.6rem;padding:1.05rem;border-radius:100px;
-    text-decoration:none;font-weight:500;background:var(--ink);color:#fff;
-    box-shadow:0 18px 40px -16px rgba(11,14,19,.6);
-  }
-  .sticky-call svg{width:17px;height:17px;color:var(--blue-lt)}
+@media(max-width:1000px){
+  .sticky-call{display:flex;position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:70;align-items:center;justify-content:center;gap:.6rem;padding:1.05rem;border-radius:var(--r);text-decoration:none;font-weight:600;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;background:var(--blau);color:#fff;box-shadow:0 16px 36px -14px rgba(11,124,201,.9)}
+  .sticky-call svg{width:16px;height:16px}
   body{padding-bottom:5rem}
 }
 
 /* ---------- Overlay ---------- */
-.ov{position:fixed;inset:0;z-index:200;display:none;background:rgba(11,14,19,.45);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:clamp(.8rem,3vw,2.5rem);overflow-y:auto}
+.ov{position:fixed;inset:0;z-index:200;display:none;background:rgba(16,20,24,.6);padding:clamp(.8rem,3vw,2.5rem);overflow-y:auto}
 .ov[data-open="true"]{display:grid;place-items:center}
-.ov-card{width:min(100%,1000px);max-height:100%;overflow-y:auto;background:var(--paper);border-radius:var(--r-xl);box-shadow:var(--sh-3);animation:rise .38s cubic-bezier(.2,.9,.3,1)}
-@keyframes rise{from{opacity:0;transform:translateY(18px) scale(.985)}}
-.ov-x{position:sticky;top:0;margin:1rem 1rem 0 auto;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--soft);border:1px solid var(--line);color:var(--ink);z-index:5}
-.ov-x:hover{background:var(--soft-2)}
+.ov-card{width:min(100%,1020px);max-height:100%;overflow-y:auto;background:var(--paper);border-radius:var(--r-lg);box-shadow:var(--sh-2)}
+.ov-x{position:sticky;top:0;margin:1rem 1rem 0 auto;display:grid;place-items:center;width:44px;height:44px;border-radius:var(--r);background:var(--soft);border:1px solid var(--line);color:var(--ink);z-index:5}
+.ov-x:hover{background:var(--blau);border-color:var(--blau);color:#fff}
 .ov-body{padding:0 clamp(1.3rem,3.4vw,3rem) clamp(2rem,3.4vw,3rem)}
 .ov-main .ph{aspect-ratio:16/10;margin-bottom:.8rem}
-.thumbs{display:flex;gap:.65rem;overflow-x:auto;padding-bottom:.5rem}
-.thumbs .ph{width:92px;flex:none;aspect-ratio:1;cursor:pointer;border-radius:var(--r-sm)}
-.thumbs .ph[aria-current="true"]{border-color:var(--blue);box-shadow:0 0 0 2px rgba(11,124,201,.25)}
+.thumbs{display:flex;gap:.6rem;overflow-x:auto;padding-bottom:.5rem}
+.thumbs .ph{width:94px;flex:none;aspect-ratio:1;cursor:pointer}
+.thumbs .ph[aria-current="true"]{border-color:var(--blau);box-shadow:0 0 0 2px var(--blau)}
 .ov-info{margin-top:2rem}
-.ov-info h3{font-family:var(--f-display);font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:400;margin-bottom:.25rem}
-.ov-price{font-family:var(--f-display);font-size:1.9rem;font-weight:400;margin-bottom:1.5rem}
-.ov-price small{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-family:var(--f-body);margin-left:.6rem}
-.specs{width:100%;border-collapse:collapse;font-size:.9rem;margin:1.6rem 0}
+.ov-info h3{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-.03em;margin-bottom:.3rem}
+.ov-price{font-size:1.9rem;font-weight:700;letter-spacing:-.03em;color:var(--blau);margin-bottom:1.5rem}
+.ov-price small{font-size:.68rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin-left:.6rem}
+.specs{width:100%;border-collapse:collapse;font-size:.92rem;margin:1.6rem 0}
 .specs td{padding:.8rem .3rem;border-bottom:1px solid var(--line)}
-.specs td:first-child{color:var(--ink-3);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;width:42%}
+.specs td:first-child{color:var(--ink-3);font-size:.7rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;width:42%}
 .ov-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
 
 /* ---------- Rechtstexte ---------- */
 .legal{max-width:76ch}
-.legal h4{font-family:var(--f-body);font-size:1.04rem;font-weight:600;margin:2.2rem 0 .6rem}
-.legal p,.legal li{color:var(--ink-2);font-size:.93rem;font-weight:300}
+.legal h4{font-size:1.02rem;font-weight:600;margin:2.2rem 0 .6rem}
+.legal p,.legal li{color:var(--ink-2);font-size:.93rem}
 .legal ul{padding-left:1.2rem}
 
 /* ---------- Cookie ---------- */
-.cookie{
-  position:fixed;z-index:150;left:1.2rem;bottom:1.2rem;max-width:390px;background:var(--paper);
-  border:1px solid var(--line);border-radius:var(--r-md);padding:1.3rem 1.4rem;
-  box-shadow:var(--sh-2);font-size:.86rem;color:var(--ink-2);
-}
-.cookie[hidden]{display:none}
-.cookie p{margin:0 0 .9rem}
-.cookie a{color:var(--blue)}
-@media(max-width:960px){.cookie{bottom:6rem;right:1.2rem;max-width:none}}
+.cookie{position:fixed;z-index:150;left:1.2rem;bottom:1.2rem;max-width:400px;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--blau);border-radius:var(--r-lg);padding:1.4rem 1.5rem;box-shadow:var(--sh-2);font-size:.87rem;color:var(--ink-2)}
+.cookie p{margin:0 0 1rem}
+.cookie a{color:var(--blau)}
+@media(max-width:1000px){.cookie{bottom:6rem;right:1.2rem;max-width:none}}
 
 /* ---------- Reveal ---------- */
-.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.75,.3,1)}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.3,1)}
 .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
 
@@ -373,84 +290,77 @@ body[data-view="admin"]{background:var(--soft)}
 body[data-view="admin"] .sticky-call,body[data-view="admin"] .cookie{display:none!important}
 
 .a-login{min-height:100vh;display:grid;place-items:center;padding:1.5rem}
-.a-box{width:min(100%,430px);background:var(--paper);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(1.8rem,4vw,2.6rem);box-shadow:var(--sh-2)}
-.a-bar{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--line);padding-block:.95rem}
+.a-box{width:min(100%,440px);background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--blau);border-radius:var(--r-lg);padding:clamp(1.8rem,4vw,2.6rem);box-shadow:var(--sh)}
+.a-bar{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line);padding-block:1rem}
 .a-bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.a-bar b{font-family:var(--f-display);font-weight:400;font-size:1.15rem;display:block}
-.a-bar small{font-size:.71rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.a-bar b{font-size:1.08rem;font-weight:600;display:block}
+.a-bar small{font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
 .a-acts{display:flex;gap:.55rem;flex-wrap:wrap}
 
-.a-panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(1.5rem,3vw,2.2rem);margin-bottom:1.1rem;box-shadow:var(--sh-1)}
-.a-panel h2{font-family:var(--f-body);font-size:1.04rem;font-weight:600;margin-bottom:1.2rem}
+.a-panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(1.5rem,3vw,2.2rem);margin-bottom:1.1rem;box-shadow:var(--sh)}
+.a-panel h2{font-size:1.05rem;font-weight:600;margin-bottom:1.2rem}
 .fld{display:block;margin-bottom:1.05rem}
-.fld > span{display:block;font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.45rem}
-input,textarea,select{
-  width:100%;font:inherit;font-size:.94rem;padding:.8rem .95rem;background:var(--paper);
-  border:1px solid var(--line-2);border-radius:var(--r-sm);color:var(--ink);transition:border-color .22s,box-shadow .22s;
-}
-input:focus,textarea:focus,select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,124,201,.12)}
+.fld > span{display:block;font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.45rem}
+input,textarea,select{width:100%;font:inherit;font-size:.94rem;padding:.8rem .95rem;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);color:var(--ink);transition:border-color .2s,box-shadow .2s}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--blau);box-shadow:0 0 0 3px rgba(11,124,201,.14)}
 textarea{min-height:120px;resize:vertical}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}
 .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:0 1rem}
 @media(max-width:700px){.g2,.g3{grid-template-columns:1fr}}
-.hint{font-size:.83rem;color:var(--ink-3);margin:-.4rem 0 1.1rem;font-weight:300}
+.hint{font-size:.85rem;color:var(--ink-3);margin:-.4rem 0 1.1rem}
 
-.a-row{display:grid;grid-template-columns:76px 1fr auto;gap:1.1rem;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:.85rem;margin-bottom:.75rem;box-shadow:var(--sh-1);transition:border-color .28s}
-.a-row:hover{border-color:var(--line-2)}
-.a-row .ph{aspect-ratio:1;border-radius:var(--r-sm);box-shadow:none}
+.a-row{display:grid;grid-template-columns:78px 1fr auto;gap:1.1rem;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:.85rem;margin-bottom:.75rem;transition:border-color .25s}
+.a-row:hover{border-color:var(--blau)}
+.a-row .ph{aspect-ratio:1}
 .a-row .ph::after{display:none}
-.a-rt{font-weight:500;font-size:.99rem;margin-bottom:.15rem}
-.a-rm{font-size:.77rem;color:var(--ink-3)}
+.a-rt{font-weight:600;font-size:.99rem;margin-bottom:.15rem}
+.a-rm{font-size:.78rem;color:var(--ink-3)}
 .a-ra{display:flex;gap:.42rem;flex-wrap:wrap}
-.ibtn{width:37px;height:37px;display:grid;place-items:center;border-radius:11px;background:var(--paper);border:1px solid var(--line-2);color:var(--ink-2);transition:all .24s}
-.ibtn:hover:not(:disabled){color:var(--blue);border-color:var(--blue)}
+.ibtn{width:38px;height:38px;display:grid;place-items:center;border-radius:var(--r);background:var(--paper);border:1px solid var(--line);color:var(--ink-2);transition:all .22s}
+.ibtn:hover:not(:disabled){color:var(--blau);border-color:var(--blau)}
 .ibtn:disabled{opacity:.3;cursor:not-allowed}
 .ibtn svg{width:15px;height:15px}
 @media(max-width:640px){.a-row{grid-template-columns:58px 1fr}.a-ra{grid-column:1/-1}}
 
 .thumbgrid{display:flex;flex-wrap:wrap;gap:.65rem;margin-bottom:1rem}
-.tw{position:relative;width:96px}
-.tw img{width:96px;height:96px;object-fit:cover;border-radius:var(--r-sm);border:1px solid var(--line)}
+.tw{position:relative;width:98px}
+.tw img{width:98px;height:98px;object-fit:cover;border-radius:var(--r);border:1px solid var(--line)}
 .tw button{position:absolute;top:-8px;right:-8px;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;border:0;font-size:.9rem;line-height:1;display:grid;place-items:center}
-.dngr{border-color:#F0C9C7!important;color:#C0392B!important}
+.dngr{border-color:#EFC8C5!important;color:#C0392B!important}
 .dngr:hover{background:#FCEEEC!important;border-color:#C0392B!important}
 
-.toast{position:fixed;left:50%;bottom:1.8rem;transform:translateX(-50%);z-index:400;background:var(--ink);color:#fff;padding:.9rem 1.55rem;border-radius:100px;font-size:.89rem;font-weight:500;box-shadow:var(--sh-2);max-width:90vw;text-align:center}
+.toast{position:fixed;left:50%;bottom:1.8rem;transform:translateX(-50%);z-index:400;background:var(--ink);color:#fff;padding:.9rem 1.6rem;border-radius:var(--r);font-size:.9rem;font-weight:500;box-shadow:var(--sh-2);max-width:90vw;text-align:center}
 .toast[data-t="err"]{background:#C0392B}
-.toast[hidden]{display:none}
 </style>
 </head>
 
 <body data-view="site">
 
-<!-- ==================================================================
-     ÖFFENTLICHE SEITE
-     ================================================================== -->
 <div id="site">
 
-<header class="hdr" id="hdr">
+<header class="hdr" id="hdr" style="position:relative">
   <div class="wrap">
     <a class="brandlink" href="#top">
       <span class="mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#0B7CC9" stroke-width="1.5" stroke-linecap="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round">
           <circle cx="12" cy="12" r="3.4"/><path d="M12 1.8v3.4M12 18.8v3.4M1.8 12h3.4M18.8 12h3.4M4.8 4.8l2.4 2.4M16.8 16.8l2.4 2.4M19.2 4.8l-2.4 2.4M7.2 16.8l-2.4 2.4"/>
         </svg>
       </span>
-      <span class="wordmark">boner maschinen</span>
+      <span class="wordmark">boner maschinen<small>Küblis · Prättigau</small></span>
     </a>
 
     <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menü">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
 
     <nav class="nav" id="nav">
       <a href="#leistungen">Leistungen</a>
       <a href="#occasionen">Occasionen</a>
-      <a href="#betrieb">Betrieb</a>
+      <a href="#warum">Betrieb</a>
       <a href="#werkstatt">Werkstatt</a>
       <a href="#kontakt">Kontakt</a>
       <a class="tel-pill" href="tel:+41000000000">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
         081 000 00 00
       </a>
     </nav>
@@ -460,79 +370,145 @@ textarea{min-height:120px;resize:vertical}
 <main id="top">
 
 <!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="label">Holzbearbeitungsmaschinen · Prättigau</p>
-      <h1>Maschinen,<br><span class="thin">die</span> <span class="hl">weiterlaufen</span>.</h1>
-      <p class="lead">
-        Service, Revision und Verkauf für Schreinereien.
-        Neu ab Werk oder als geprüfte Occasion, beides mit derselben Sorgfalt,
-        die eine Werkstatt braucht, wenn am Montag der Auftrag steht.
-      </p>
-      <div class="hero-cta">
-        <a class="btn btn-p" href="#occasionen">
-          Occasionen ansehen
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a class="btn btn-g" href="#kontakt">Service anfragen</a>
-      </div>
-      <div class="hero-stats">
-        <div><b>Küblis</b><span>Werkstatt GR</span></div>
-        <div><b>CH</b><span>Serviceregion</span></div>
-        <div><b>[Jahr]</b><span>gegründet</span></div>
-      </div>
+<section class="hero" style="padding:0">
+  <div class="hero-img">
+    <div class="ph" data-label="Platzhalter — Werkstatt oder Maschine, breites Bild"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-box">
+      <h1>Maschinen und<br>Service für<br>Schreiner</h1>
+      <p>boner maschinen: Service, Revision und Verkauf — seit der Gründung in derselben Hand.</p>
+      <a class="btn btn-w" href="#leistungen">
+        Unsere Leistungen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
     </div>
-    <div><div class="ph ph-tall" data-label="Platzhalter — Maschine oder Werkstatt, hochkant"></div></div>
   </div>
 </section>
 
-<!-- BANNER -->
-<div class="banner rv">
-  <div class="banner-inner">
-    <span class="wordmark">boner maschinen</span>
-    <p>Service &amp; Verkauf · Neumaschinen &amp; Occasionen</p>
-  </div>
-</div>
-
-<!-- LEISTUNGEN -->
-<section class="soft" id="leistungen" style="margin-top:clamp(4rem,8vw,7rem)">
+<!-- AKTUELL -->
+<section>
   <div class="wrap">
-    <div class="head">
-      <p class="label">Was wir machen</p>
-      <h2>Vier Dinge,<br>richtig gemacht.</h2>
-      <p class="lead">Kein Katalogversand, keine Hotline. Sie reden mit der Person, die nachher unter der Maschine liegt.</p>
+    <div class="head"><span class="label">Aktuell</span><h2>Neues aus der Werkstatt</h2></div>
+    <div class="news">
+      <article class="rv">
+        <div class="ph ph-wide" data-label="Platzhalter — Bild zur Meldung 1"></div>
+        <div>
+          <h3>[Platzhalter — Titel der Meldung]</h3>
+          <p>Kurzer Anrisstext, zwei bis drei Zeilen. Zum Beispiel eine frisch revidierte Maschine, ein Transport oder ein neu eingetroffenes Occasionsgerät.</p>
+          <a class="mehr" href="#occasionen">Mehr erfahren
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="rv">
+        <div class="ph ph-wide" data-label="Platzhalter — Bild zur Meldung 2"></div>
+        <div>
+          <h3>[Platzhalter — Titel der Meldung]</h3>
+          <p>Kurzer Anrisstext, zwei bis drei Zeilen. Platz für Hinweise auf Betriebsferien, neue Vertretungen oder abgeschlossene Projekte.</p>
+          <a class="mehr" href="#kontakt">Mehr erfahren
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="rv">
+        <div class="ph ph-wide" data-label="Platzhalter — Bild zur Meldung 3"></div>
+        <div>
+          <h3>[Platzhalter — Titel der Meldung]</h3>
+          <p>Kurzer Anrisstext, zwei bis drei Zeilen. Diese Karten lassen sich jederzeit gegen echte Meldungen austauschen.</p>
+          <a class="mehr" href="#werkstatt">Mehr erfahren
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
     </div>
-    <div class="cards">
-      <article class="card rv">
-        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 0 5 5L16 15l-3-3z"/><path d="M13 12L4.5 20.5a2.1 2.1 0 0 1-3-3L10 9"/></svg></div>
-        <h3>Service &amp; Reparatur</h3>
-        <p>Unterhalt, Störungsbehebung und Ersatzteile für nahezu jedes Fabrikat — auch wenn der Hersteller den Support längst eingestellt hat.</p>
-      </article>
-      <article class="card rv">
-        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></div>
-        <h3>Neumaschinen</h3>
-        <p>Wir beraten nach Werkstatt, nicht nach Prospekt: Platz, Absaugung, Strom und Auftragslage bestimmen, welche Maschine passt.</p>
-      </article>
-      <article class="card rv">
-        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.9 12a8.9 8.9 0 1 1-2.6-6.3"/><path d="M21 4v5h-5"/></svg></div>
-        <h3>Occasionen</h3>
-        <p>Jede Occasion läuft vor dem Verkauf durch unsere Werkstatt. Was wir nicht selbst kaufen würden, stellen wir auch nicht in die Liste.</p>
-      </article>
-      <article class="card rv">
-        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.1 13.1a1 1 0 0 0 .8 1.6H11l-1 7.3 8.9-11.1a1 1 0 0 0-.8-1.6H12z"/></svg></div>
-        <h3>Elektro &amp; Automation</h3>
-        <p>Steuerungen instand setzen, Antriebe ersetzen, Anlagen nachrüsten. Damit eine gute Mechanik nicht an der Elektronik scheitert.</p>
-      </article>
+  </div>
+</section>
+
+<!-- KOMPETENZFELDER -->
+<section id="leistungen" class="soft">
+  <div class="wrap">
+    <div class="head"><span class="label">Unsere Kompetenzfelder</span><h2>Drei Bereiche,<br>ein Ansprechpartner.</h2></div>
+    <div class="felder">
+      <a class="feld rv" href="#kontakt">
+        <div class="ph" data-label="Platzhalter — Service am Gerät"></div>
+        <div>
+          <h3>Service &amp; Reparatur</h3>
+          <p>Unterhalt, Störungsbehebung und Ersatzteile für nahezu jedes Fabrikat — auch für ältere Maschinen ohne Herstellersupport.</p>
+          <span class="mehr">Mehr erfahren
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="feld rv" href="#occasionen">
+        <div class="ph" data-label="Platzhalter — Maschine in der Ausstellung"></div>
+        <div>
+          <h3>Maschinen &amp; Occasionen</h3>
+          <p>Neumaschinen ab Werk und geprüfte Occasionen. Jede Occasion läuft vor dem Verkauf durch unsere Werkstatt.</p>
+          <span class="mehr">Mehr erfahren
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="feld rv" href="#kontakt">
+        <div class="ph" data-label="Platzhalter — Steuerung / Schaltschrank"></div>
+        <div>
+          <h3>Elektro &amp; Automation</h3>
+          <p>Steuerungen instand setzen, Antriebe ersetzen, Anlagen nachrüsten. Damit gute Mechanik nicht an der Elektronik scheitert.</p>
+          <span class="mehr">Mehr erfahren
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WARUM -->
+<section id="warum">
+  <div class="wrap warum-grid">
+    <div>
+      <span class="label">Der Betrieb</span>
+      <h2>Aufgebaut,<br>nicht übernommen.</h2>
+      <p class="lead">
+        Ambrosi Boner hat den Betrieb selbst gegründet und führt ihn bis heute. Was als
+        Ein-Mann-Werkstatt für die Schreinereien im Tal begann, ist inzwischen die Adresse,
+        an die Betriebe von weit her ihre Maschinen bringen — und jede davon geht durch
+        dieselben Hände wie am ersten Tag.
+      </p>
+      <a class="btn btn-b" href="#kontakt" style="margin-top:1rem">
+        Kontakt aufnehmen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div>
+      <h3 style="margin-bottom:1.2rem">Warum boner maschinen?</h3>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Beratung vom Inhaber, nicht aus dem Prospekt</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Eigene Werkstatt für Revisionen und Reparaturen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Service für nahezu jedes Fabrikat, auch ältere Baujahre</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Occasionen erst nach eigener Prüfung im Angebot</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Transport und Inbetriebnahme in der ganzen Schweiz</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WERKSTATT-PANEL -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="panel rv">
+      <div>
+        <span class="label" style="color:rgba(255,255,255,.75)">Werkstatt Küblis</span>
+        <h2>Maschinen ansehen<br>und laufen lassen.</h2>
+        <p>Unsere Occasionen stehen betriebsbereit in Küblis. Nach Absprache können Sie
+           jede Maschine besichtigen und mit eigenem Material vorführen lassen — bevor Sie sich entscheiden.</p>
+        <a class="btn btn-o" href="#kontakt">Besichtigung vereinbaren</a>
+      </div>
+      <div class="ph" data-label="Platzhalter — Werkstatt innen"></div>
     </div>
   </div>
 </section>
 
 <!-- OCCASIONEN -->
-<section id="occasionen">
+<section id="occasionen" class="soft">
   <div class="wrap">
     <div class="head">
-      <p class="label">Aktuelles Angebot</p>
+      <span class="label">Aktuelles Angebot</span>
       <h2>Occasionen &amp;<br>Lagermaschinen.</h2>
       <p class="lead">Alle Maschinen stehen bei uns in Küblis und können nach Absprache besichtigt und vorgeführt werden. Preise exkl. MwSt., ab Standort.</p>
     </div>
@@ -541,66 +517,87 @@ textarea{min-height:120px;resize:vertical}
   </div>
 </section>
 
-<!-- BETRIEB -->
-<section class="soft" id="betrieb">
-  <div class="wrap story-grid">
-    <div class="story-imgs">
-      <div class="ph r-md" data-label="Platzhalter — Inhaber in der Werkstatt"></div>
-      <div class="ph r-md" data-label="Platzhalter — Detail Werkzeug"></div>
-      <div class="ph r-md" data-label="Platzhalter — Werkstatt früher"></div>
-    </div>
-    <div>
-      <p class="label">Der Betrieb</p>
-      <h2>Holz,<br>Aus Leidenschaft.</h2>
-      <p class="lead">
-        Was als Ein-Mann-Werkstatt für die Schreinereien im Tal begann, ist heute die
-        Adresse, an die Betriebe von weit her ihre Maschinen bringen. Übergeben wurde
-        der Betrieb nicht auf dem Papier, sondern über Jahre nebeneinander an derselben Maschine.
-      </p>
-      <div class="tl">
-        <div><span class="tl-when">[Jahr]</span><div><strong>Gründung</strong><p>Brosi Boner beginnt mit Service und Reparaturen für Schreinereien im Prättigau.</p></div></div>
-        <div><span class="tl-when">[Jahr]</span><div><strong>Eigene Werkstatt in Küblis</strong><p>Mehr Platz für Revisionen, Occasionen und die Ausstellung einzelner Maschinen.</p></div></div>
-        <div><span class="tl-when">Heute</span><div><strong>Service in der ganzen Ostschweiz</strong><p>Vom Notfall am Freitagabend bis zur kompletten Revision einer Kehlmaschine.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WERKSTATT -->
-<section id="werkstatt">
+<!-- MARKEN -->
+<section>
   <div class="wrap">
-    <div class="head">
-      <p class="label">Einblick</p>
-      <h2>Aus der Werkstatt.</h2>
-      <p class="lead">Revisionen, Umbauten, Transporte — ein Ausschnitt aus dem, was bei uns durchgeht.</p>
-    </div>
-    <div class="gal" id="gal">
-      <div class="ph ph-wide r-md" data-label="Platzhalter — Werkstattbild 1"></div>
-      <div class="ph ph-wide r-md" data-label="Platzhalter — Werkstattbild 2"></div>
-      <div class="ph ph-wide r-md" data-label="Platzhalter — Werkstattbild 3"></div>
-      <div class="ph ph-wide r-md" data-label="Platzhalter — Transport / Lastwagen"></div>
-      <div class="ph ph-wide r-md" data-label="Platzhalter — Werkstattbild 5"></div>
-      <div class="ph ph-wide r-md" data-label="Platzhalter — Werkstattbild 6"></div>
+    <div class="head"><span class="label">Service für</span><h2>Nahezu jedes Fabrikat.</h2>
+      <p class="lead">Wir warten und reparieren Maschinen unabhängig vom Hersteller. Die folgenden Felder werden beim Livegang durch die Marken ersetzt, die im Betrieb am häufigsten vorkommen.</p></div>
+    <div class="marken">
+      <div>Platzhalter Marke 1</div><div>Platzhalter Marke 2</div><div>Platzhalter Marke 3</div>
+      <div>Platzhalter Marke 4</div><div>Platzhalter Marke 5</div><div>Platzhalter Marke 6</div>
     </div>
   </div>
 </section>
 
-<!-- KONTAKT -->
-<section class="dark" id="kontakt">
-  <div class="wrap contact-grid">
-    <div>
-      <p class="label">Kontakt</p>
-      <h2>Rufen Sie an.</h2>
-      <p class="lead">Am schnellsten geht es telefonisch — dann wissen wir gleich, um welche Maschine es geht. Besichtigungen in Küblis nach Vereinbarung.</p>
-      <div class="klist">
-        <div><span class="kkey">Werkstatt</span><span class="kval">boner maschinen<br>[Strasse und Nr.]<br>7240 Küblis</span></div>
-        <div><span class="kkey">Sitz</span><span class="kval">Oberdorfstrasse 36<br>7247 Saas im Prättigau</span></div>
-        <div><span class="kkey">Telefon</span><span class="kval"><a href="tel:+41000000000">081 000 00 00</a></span></div>
-        <div><span class="kkey">E-Mail</span><span class="kval"><a href="mailto:info@bonermaschinen.ch">info@bonermaschinen.ch</a></span></div>
-        <div><span class="kkey">Zeiten</span><span class="kval">Mo–Fr [Zeiten]<br>Sa nach Vereinbarung</span></div>
-      </div>
+<!-- WERKSTATT / GALERIE -->
+<section id="werkstatt" class="soft">
+  <div class="wrap">
+    <div class="head"><span class="label">Einblick</span><h2>Aus der Werkstatt.</h2>
+      <p class="lead">Revisionen, Umbauten, Transporte — ein Ausschnitt aus dem, was bei uns durchgeht.</p></div>
+    <div class="news" id="gal">
+      <div class="ph ph-wide" data-label="Platzhalter — Werkstattbild 1"></div>
+      <div class="ph ph-wide" data-label="Platzhalter — Werkstattbild 2"></div>
+      <div class="ph ph-wide" data-label="Platzhalter — Werkstattbild 3"></div>
+      <div class="ph ph-wide" data-label="Platzhalter — Transport / Lastwagen"></div>
+      <div class="ph ph-wide" data-label="Platzhalter — Werkstattbild 5"></div>
+      <div class="ph ph-wide" data-label="Platzhalter — Werkstattbild 6"></div>
     </div>
-    <div class="mapbox"><span>Platzhalter — Karte<br>Küblis GR<br>OpenStreetMap folgt beim Livegang</span></div>
+  </div>
+</section>
+
+<!-- REFERENZEN -->
+<section>
+  <div class="wrap">
+    <div class="head"><span class="label">Referenzen</span><h2>Was Kunden sagen.</h2>
+      <p class="lead">Platzhalter — beim Livegang durch echte Rückmeldungen aus dem Kundenkreis ersetzen.</p></div>
+    <div class="refs">
+      <article class="ref rv">
+        <div class="ref-firma">[Platzhalter — Firma]</div>
+        <div class="ref-ort">[Platzhalter — Ort]</div>
+        <h3>[Platzhalter — kurze Überschrift]</h3>
+        <p>„Platzhalter für ein bis zwei Sätze aus dem Kundenmund. Zum Beispiel zu einer Revision, die einen Maschinenkauf erspart hat."</p>
+      </article>
+      <article class="ref rv">
+        <div class="ref-firma">[Platzhalter — Firma]</div>
+        <div class="ref-ort">[Platzhalter — Ort]</div>
+        <h3>[Platzhalter — kurze Überschrift]</h3>
+        <p>„Platzhalter für ein bis zwei Sätze aus dem Kundenmund. Zum Beispiel zur Reaktionszeit bei einem Ausfall."</p>
+      </article>
+      <article class="ref rv">
+        <div class="ref-firma">[Platzhalter — Firma]</div>
+        <div class="ref-ort">[Platzhalter — Ort]</div>
+        <h3>[Platzhalter — kurze Überschrift]</h3>
+        <p>„Platzhalter für ein bis zwei Sätze aus dem Kundenmund. Zum Beispiel zu einer gekauften Occasion."</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT-CTA -->
+<section class="kontakt-cta">
+  <div class="wrap">
+    <span class="label" style="color:rgba(255,255,255,.75)">Kontakt</span>
+    <h2>Rufen Sie an oder kommen Sie in Küblis vorbei.</h2>
+    <p>Am schnellsten geht es telefonisch — dann wissen wir gleich, um welche Maschine es geht.
+       Besichtigungen nach Vereinbarung.</p>
+    <a class="btn btn-w" href="tel:+41000000000">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      081 000 00 00
+    </a>
+  </div>
+</section>
+
+<!-- KONTAKTDATEN -->
+<section id="kontakt">
+  <div class="wrap">
+    <div class="klist">
+      <div><span class="kkey">Werkstatt</span><span class="kval">boner maschinen<br>[Strasse und Nr.]<br>7240 Küblis</span></div>
+      <div><span class="kkey">Sitz</span><span class="kval">Oberdorfstrasse 36<br>7247 Saas im Prättigau</span></div>
+      <div><span class="kkey">Telefon</span><span class="kval"><a href="tel:+41000000000">081 000 00 00</a></span></div>
+      <div><span class="kkey">E-Mail</span><span class="kval"><a href="mailto:info@bonermaschinen.ch">info@bonermaschinen.ch</a></span></div>
+      <div><span class="kkey">Zeiten</span><span class="kval">Mo–Fr [Zeiten]<br>Sa nach Vereinbarung</span></div>
+    </div>
+    <div class="mapbox"><span>Platzhalter — Karte Küblis GR · OpenStreetMap folgt beim Livegang</span></div>
   </div>
 </section>
 
@@ -608,41 +605,63 @@ textarea{min-height:120px;resize:vertical}
 
 <footer class="ftr">
   <div class="wrap">
-    <small id="cprt"></small>
-    <nav class="flinks">
-      <a href="#" data-legal="impressum">Impressum</a>
-      <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>
-      <a href="#verwaltung">Verwaltung</a>
-    </nav>
+    <div class="ftr-top">
+      <div>
+        <span class="wordmark" style="font-size:1.4rem">boner maschinen<small style="color:rgba(255,255,255,.45)">Küblis · Prättigau</small></span>
+        <p style="margin-top:1.2rem;font-size:.9rem;max-width:34ch">Service, Revision und Verkauf von Holzbearbeitungsmaschinen für Schreinereien in der ganzen Schweiz.</p>
+      </div>
+      <div>
+        <h4>Adresse</h4>
+        <div class="ftr-links">
+          <span>[Strasse und Nr.]<br>7240 Küblis</span>
+          <a href="tel:+41000000000">081 000 00 00</a>
+          <a href="mailto:info@bonermaschinen.ch">info@bonermaschinen.ch</a>
+        </div>
+      </div>
+      <div>
+        <h4>Seiten</h4>
+        <div class="ftr-links">
+          <a href="#leistungen">Leistungen</a>
+          <a href="#occasionen">Occasionen</a>
+          <a href="#werkstatt">Werkstatt</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+    </div>
+    <div class="ftr-bot">
+      <small id="cprt"></small>
+      <nav class="flinks">
+        <a href="#" data-legal="impressum">Impressum</a>
+        <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>
+        <a href="#verwaltung">Verwaltung</a>
+      </nav>
+    </div>
   </div>
 </footer>
 
 <a class="sticky-call" href="tel:+41000000000">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
   Jetzt anrufen
 </a>
 
 <aside class="cookie" id="cookie" hidden>
   <p>Diese Website speichert nur technisch Notwendiges im Browser. Kein Tracking, keine Werbung. Details in der <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>.</p>
-  <button class="btn btn-p btn-sm" id="cookieOk">Verstanden</button>
+  <button class="btn btn-b btn-sm" id="cookieOk">Verstanden</button>
 </aside>
 
 </div><!-- /#site -->
 
 
-<!-- ==================================================================
-     VERWALTUNG
-     ================================================================== -->
+<!-- VERWALTUNG -->
 <div id="admin">
-
   <div class="a-login" id="aLogin">
     <div class="a-box">
       <span class="mark" style="margin-bottom:1.5rem" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#0B7CC9" stroke-width="1.5" stroke-linecap="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round">
           <circle cx="12" cy="12" r="3.4"/><path d="M12 1.8v3.4M12 18.8v3.4M1.8 12h3.4M18.8 12h3.4M4.8 4.8l2.4 2.4M16.8 16.8l2.4 2.4M19.2 4.8l-2.4 2.4M7.2 16.8l-2.4 2.4"/>
         </svg>
       </span>
-      <h2 style="font-size:1.85rem;margin-bottom:.25rem">Verwaltung</h2>
+      <h2 style="font-size:1.8rem;margin-bottom:.25rem">Verwaltung</h2>
       <p class="hint" style="margin-bottom:1.7rem">Angebote bearbeiten, hinzufügen und entfernen.</p>
       <label class="fld"><span>Passwort</span><input type="password" id="pw" autocomplete="current-password"></label>
       <button class="btn btn-b" id="pwBtn" style="width:100%;justify-content:center">Anmelden</button>
@@ -667,16 +686,13 @@ textarea{min-height:120px;resize:vertical}
 
       <div class="a-panel" id="aEdit" hidden>
         <h2 id="aEditTitle">Maschine bearbeiten</h2>
-
         <label class="fld"><span>Bezeichnung</span><input id="f_titel" placeholder="z. B. Formatkreissäge 3200 mm"></label>
-
         <div class="g2">
           <label class="fld"><span>Hersteller</span><input id="f_hersteller"></label>
           <label class="fld"><span>Kategorie</span><input id="f_kategorie" list="kats" placeholder="Occasion">
             <datalist id="kats"><option value="Occasion"><option value="Neumaschine"><option value="Lagermaschine"></datalist>
           </label>
         </div>
-
         <div class="g3">
           <label class="fld"><span>Baujahr</span><input id="f_baujahr"></label>
           <label class="fld"><span>Zustand</span><input id="f_zustand" placeholder="revidiert"></label>
@@ -686,7 +702,6 @@ textarea{min-height:120px;resize:vertical}
             <option value="verkauft">verkauft</option>
           </select></label>
         </div>
-
         <label class="fld"><span>Preis in CHF — leer = auf Anfrage</span><input id="f_preis" inputmode="numeric" placeholder="8900"></label>
         <label class="fld"><span>Beschreibung</span><textarea id="f_beschreibung"></textarea></label>
 
@@ -712,7 +727,7 @@ textarea{min-height:120px;resize:vertical}
 <div class="ov" id="ov" data-open="false" role="dialog" aria-modal="true">
   <div class="ov-card">
     <button class="ov-x" id="ovX" aria-label="Schliessen">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
     <div class="ov-body" id="ovBody"></div>
   </div>
@@ -721,8 +736,6 @@ textarea{min-height:120px;resize:vertical}
 <div class="toast" id="toast" hidden></div>
 
 
-<!-- Startdaten. Werden benutzt, solange in der Verwaltung noch nichts
-     gespeichert wurde. Danach kommen die Angebote aus /api/angebote. -->
 <script id="startdaten" type="application/json">
 [
   {
